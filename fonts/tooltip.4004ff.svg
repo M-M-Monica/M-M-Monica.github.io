@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="80px" viewBox="0 0 80 80">
-<path fill="#24c1f6" d="M80,0c0,0-5.631,14.445-25.715,27.213C29.946,42.688,12.79,33.997,3.752,30.417
-	c-3.956-1.567-4.265,1.021-2.966,3.814C16.45,67.934,80,79.614,80,79.614l0,0V0z"/>
-</svg>
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1575861759615" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="598" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48"><defs><style type="text/css"></style></defs><path d="M1024 0s-72.0768 184.896-329.152 348.3264C383.3088 546.4064 163.712 435.1616 48.0256 389.3376-2.6112 369.28-6.5664 402.4064 10.0608 438.1568 210.56 869.5552 1024 1019.0592 1024 1019.0592V0z" fill="#4F7B92" p-id="599"></path></svg>
