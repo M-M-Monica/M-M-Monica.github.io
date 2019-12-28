@@ -135,6 +135,190 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-正则表达式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/28/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/28/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="archive-article-date">
+  	<time datetime="2019-12-28T14:59:44.873Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-常用元字符串"><a href="#一-常用元字符串" class="headerlink" title="一.常用元字符串"></a>一.常用元字符串</h3><table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\d</td>
+<td>匹配数字</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>匹配任意非数字的字符</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>匹配字母或数字或下划线</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>匹配任意不是字母或数字或下划线</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任意空白符</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>匹配任意不是空白符的字符</td>
+</tr>
+<tr>
+<td>.</td>
+<td>匹配除换行符以外的任意单个字符</td>
+</tr>
+<tr>
+<td>^</td>
+<td>以什么开始</td>
+</tr>
+<tr>
+<td>$</td>
+<td>以什么结束</td>
+</tr>
+</tbody></table>
+<h3 id="二-限定符"><a href="#二-限定符" class="headerlink" title="二.限定符"></a>二.限定符</h3><table>
+<thead>
+<tr>
+<th>限定符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>*</td>
+<td>重复0次或更多次</td>
+</tr>
+<tr>
+<td>+</td>
+<td>重复1次或更多次</td>
+</tr>
+<tr>
+<td>?</td>
+<td>重复0次或1次</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>重复n次</td>
+</tr>
+<tr>
+<td>{n},</td>
+<td>重复n次或更多次</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>重复n到m次</td>
+</tr>
+</tbody></table>
+<h3 id="三-其他"><a href="#三-其他" class="headerlink" title="三.其他"></a>三.其他</h3><ul>
+<li>[]字符串用中括号括起来表示匹配其中任一字符，相当于或的意思</li>
+<li>[^]匹配中括号以内的内容</li>
+<li>\转义符</li>
+<li>|或，选两者中一个（|将左右分成两部分，不管左右两边多长）</li>
+<li>()二选一分组（gra(a|e)y匹配gray和grey）</li>
+<li>[\u4e00-\u9fa5]匹配汉字</li>
+</ul>
+<h3 id="四-javascript中使用正则"><a href="#四-javascript中使用正则" class="headerlink" title="四.javascript中使用正则"></a>四.javascript中使用正则</h3><ul>
+<li>var reg = new RegExp(‘\d’, ‘i’);</li>
+<li>var reg = /\d/i;<table>
+<thead>
+<tr>
+<th>标志</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>i</td>
+<td>忽略大小写</td>
+</tr>
+<tr>
+<td>g</td>
+<td>全局匹配</td>
+</tr>
+<tr>
+<td>ig</td>
+<td>忽略大小写+全局匹配</td>
+</tr>
+</tbody></table>
+</li>
+<li><strong>匹配</strong>：正则表达式.test(“字符串”)</li>
+<li><strong>提取</strong>：”字符串”.match(正则表达式)</li>
+<li><strong>替换</strong>：”字符串”.replace(正则表达式,”替换内容”)</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">正则</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/28/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Vue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -142,20 +326,20 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/23/Vue/">Vue</a>
+      <a class="article-title" href="/2018/12/04/Vue/">Vue</a>
     </h1>
   
 
         
-        <a href="/2019/12/23/Vue/" class="archive-article-date">
-  	<time datetime="2019-12-23T07:33:08.446Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-23</time>
+        <a href="/2018/12/04/Vue/" class="archive-article-date">
+  	<time datetime="2018-12-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一-概况"><a href="#一-概况" class="headerlink" title="一.概况"></a>一.概况</h3><p><strong>（一）Vue概况</strong></p>
+        <h3 id="一-概况"><a href="#一-概况" class="headerlink" title="一.概况"></a>一.概况</h3><p><strong>1.Vue概况</strong></p>
 <ul>
 <li><strong>Vue本身并不是一个框架</strong></li>
 <li><strong>Vue结合周边生态构成一个灵活的、渐进式框架</strong><ul>
@@ -167,208 +351,37 @@
 </ul>
 </li>
 </ul>
-<p><strong>（二）Vue核心思想</strong>：数据驱动、组件化</p>
-<p><strong>（三）Vue和React对比</strong></p>
+<p><strong>2.Vue核心思想</strong>：数据驱动、组件化</p>
+<p><strong>3.Vue和React对比</strong></p>
 <ul>
-<li><strong>Vue</strong><ul>
+<li><p><strong>Vue</strong></p>
+<ul>
 <li>模板和渲染函数的弹性选择</li>
 <li>简单的语法及项目构建</li>
 <li>更快的渲染速度和更小的体积</li>
 </ul>
 </li>
-<li><strong>React</strong><ul>
+<li><p><strong>React</strong></p>
+<ul>
 <li>更适用大型应用和更好的可测试性</li>
 <li>同时适用于Web端和原生App</li>
 <li>更大的生态圈带来的更多支持和工具</li>
 </ul>
 </li>
-<li><strong>Vue和React相同点</strong><ul>
-<li>利用虚拟DOM实现快速渲染</li>
-<li>轻量级</li>
-<li>响应式组件</li>
-<li>服务器端渲染</li>
-<li>易于集成路由工具，打包工具以及状态管理工具</li>
-<li>优秀的支持和社区</li>
-</ul>
-</li>
-</ul>
-<p><strong>（四）Vue环境搭建</strong></p>
+<li><p><strong>Vue和React相同点</strong></p>
 <ul>
-<li><p><strong>Vue多页面应用文件引用</strong></p>
-<ul>
-<li><code>&lt;script src=&quot;http://unpkg.com/vue/dist/vue.js&quot;&gt;&lt;/script&gt;</code></li>
-</ul>
+<li><p>利用虚拟DOM实现快速渲染</p>
 </li>
-<li><p><strong>vue-cli构建单页面应用</strong></p>
-<ul>
-<li>npm install -g vue-cli</li>
-<li>vue init webpack-simple demo（简单demo）</li>
-<li>vue init webpack demo（复杂demo）</li>
-</ul>
+<li><p>轻量级</p>
 </li>
-</ul>
-<p><strong>（五）MVVM</strong></p>
-<p> <img src="../image/mvvm.jpg" alt="img"> </p>
-<h3 id="二-基础常用语法"><a href="#二-基础常用语法" class="headerlink" title="二.基础常用语法"></a>二.基础常用语法</h3><h4 id="（一）模板语法"><a href="#（一）模板语法" class="headerlink" title="（一）模板语法"></a><strong>（一）模板语法</strong></h4><ul>
-<li><strong>Mustache语法</strong>：</li>
-<li><strong>Html赋值：</strong>v-html = “ “</li>
-<li><strong>绑定属性：</strong>v-bind：id = “ “</li>
-<li><strong>使用表达式：</strong></li>
-<li><strong>文本赋值：</strong>v-text = “ “</li>
-<li><strong>指令：</strong>v-if = “ “</li>
-<li><strong>过滤器：</strong>和v-bind：id = “ rawId | formatId “</li>
-</ul>
-<h4 id="（二）Class和Style绑定"><a href="#（二）Class和Style绑定" class="headerlink" title="（二）Class和Style绑定"></a><strong>（二）Class和Style绑定</strong></h4><ul>
-<li><strong>对象语法：</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">v-bind：<span class="class"><span class="keyword">class</span> </span>= <span class="string">"&#123; active：isActive, 'text-danger'：hasError &#125;"</span></span></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>数组语法：</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;div v-bind：<span class="class"><span class="keyword">class</span> </span>= <span class="string">"[activeClass,errorClass]"</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">data：&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  activeClass：<span class="string">'active'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  errorClass：<span class="string">'text-danger'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>style绑定–对象语法：</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">v-bind：style = <span class="string">"&#123; color：activeColor, fontSize：fontSize + 'px' &#125;"</span></span></pre></td></tr></table></figure>
-
-<h4 id="（三）条件渲染"><a href="#（三）条件渲染" class="headerlink" title="（三）条件渲染"></a><strong>（三）条件渲染</strong></h4><ul>
-<li><strong>v-if</strong></li>
-<li><strong>v-else</strong></li>
-<li><strong>v-else-if</strong></li>
-<li><strong>v-show</strong></li>
-<li><strong>v-cloak</strong></li>
-</ul>
-<h4 id="（四）事件处理器"><a href="#（四）事件处理器" class="headerlink" title="（四）事件处理器"></a><strong>（四）事件处理器</strong></h4><ul>
-<li>v-on：click = “greet”或者@click = “greet”<ul>
-<li><strong>事件修饰符</strong>v-on：click.stop（.prevent、.self、.once）</li>
-</ul>
+<li><p>响应式组件</p>
 </li>
-<li>v-on：keyup<ul>
-<li><strong>事件修饰符</strong>v-on：keyup.enter（.tab、.delete、.esc、.space、.up、.down、.left、.right）</li>
-</ul>
+<li><p>服务器端渲染</p>
 </li>
-</ul>
-<h4 id="（五）Vue组件"><a href="#（五）Vue组件" class="headerlink" title="（五）Vue组件"></a><strong>（五）Vue组件</strong></h4><ul>
-<li><strong>全局组件和局部组件</strong></li>
-<li><strong>父子组件通讯–数据传递</strong></li>
-<li><strong>Slot插槽</strong></li>
-</ul>
-<p><img src="../image/slot.jpg" alt="img"></p>
-<h3 id="三-路由"><a href="#三-路由" class="headerlink" title="三.路由"></a>三.路由</h3><h4 id="（一）基础介绍"><a href="#（一）基础介绍" class="headerlink" title="（一）基础介绍"></a><strong>（一）基础介绍</strong></h4><ul>
-<li><strong>vue-router用来构建SPA</strong></li>
-<li><strong>或者this.$router.push({path:’ ‘})</strong></li>
-<li>什么是前端路由？<ul>
-<li>路由是根据不同url地址展示不同的内容或页面</li>
-<li>前端路由就是把不同路由对应不同的内容或页面的任务交给前端来做，之前是通过服务端根据url的不同返回不同的页面实现的</li>
-</ul>
+<li><p>易于集成路由工具，打包工具以及状态管理工具</p>
 </li>
-<li>什么时候使用前端路由？<ul>
-<li>在单页面应用，大部分页面结构不变，只改变部分内容的使用</li>
-</ul>
-</li>
-<li>前端路由的优缺点：<ul>
-<li>优点：<ul>
-<li>用户体验好，不用每次都从服务器全部获取，可以快速展现给用户</li>
-</ul>
-</li>
-<li>缺点：<ul>
-<li>不利于SEO</li>
-<li>使用浏览器的前进/后退键时会重新发送请求，没有合理地利用缓存</li>
-<li>单页面无法记住之前滚动的位置，无法在前进/后退时记住滚动的位置</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="（二）分类"><a href="#（二）分类" class="headerlink" title="（二）分类"></a><strong>（二）分类</strong></h4><ul>
-<li><strong>动态路由匹配</strong></li>
-<li><strong>嵌套路由</strong></li>
-<li><strong>编程式路由</strong></li>
-<li><strong>命名路由和命名视图（很少用）</strong></li>
-</ul>
-<h4 id="（三）动态路由"><a href="#（三）动态路由" class="headerlink" title="（三）动态路由"></a><strong>（三）动态路由</strong></h4><table>
-<thead>
-<tr>
-<th><strong>模式</strong></th>
-<th><strong>匹配路径</strong></th>
-<th><strong>$router.params</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>/user/:username</td>
-<td>/user/evan</td>
-<td>{ username:’evan’ }</td>
-</tr>
-<tr>
-<td>/user/:username/post/:post_id</td>
-<td>/user/even/post/123</td>
-<td>{username:’evan’,post_id:123 }</td>
-</tr>
-</tbody></table>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//index.js中</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Router <span class="keyword">from</span> <span class="string">'vue-router'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> GoodsList <span class="keyword">from</span> <span class="string">'./../views/GoodsList'</span><span class="comment">//从某路径引入组件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">Vue.use(Router)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Router(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  router:[</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">  &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">     path:<span class="string">'/goods/:goodsId/user/:name'</span>,<span class="comment">//通过此path访问组件内容</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">     name:<span class="string">'GoodsList'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">     component:GoodsList</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"> ]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//组件间传参,组件中写$router.params.goodsId  $router.params.name</span></span></pre></td></tr></table></figure>
-
-<h4 id="（四）嵌套路由"><a href="#（四）嵌套路由" class="headerlink" title="（四）嵌套路由"></a><strong>（四）嵌套路由</strong></h4><ul>
-<li><strong>路由嵌套路由</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//index.js中</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Router <span class="keyword">from</span> <span class="string">'vue-router'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> GoodsList <span class="keyword">from</span> <span class="string">'./../views/GoodsList'</span><span class="comment">//从某路径引入组件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Goods1 <span class="keyword">from</span> <span class="string">'./../views/Goods1'</span><span class="comment">//从某路径引入子组件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Goods2 <span class="keyword">from</span> <span class="string">'./../views/Goods2'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">Vue.use(Router)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Router(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  router:[</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">  &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">     path:<span class="string">'/goods'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">     name:<span class="string">'GoodsList'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">     component:GoodsList,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">     children:[</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">     &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">        path:<span class="string">'goods1'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">        name:<span class="string">'goods1'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">        component:Goods1</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">     &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">     &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">        path:<span class="string">'goods2'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">        name:<span class="string">'goods2'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">        component:Goods2</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">     &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">   ]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line"> ]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//组件GoodsList中引入子组件Goods1和Goods2</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">  &lt;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">    &lt;span&gt;&#123;&#123;$router.params.goodsId&#125;&#125;&lt;<span class="regexp">/span&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line"><span class="regexp">    &lt;span&gt;&#123;&#123;$router.params.name&#125;&#125;&lt;/</span>span&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">    &lt;router-link to=<span class="string">"/goods/goods1"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">    &lt;router-link to=<span class="string">"/goods/goods2"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line">  &lt;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line">    &lt;router-view&gt;<span class="xml"><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line">  &lt;<span class="regexp">/div&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line">&lt;<span class="regexp">/template&gt;</span></span></pre></td></tr></table></figure>
-
-<h4 id="（五）编程式路由"><a href="#（五）编程式路由" class="headerlink" title="（五）编程式路由"></a><strong>（五）编程式路由</strong></h4><ul>
-<li>通过js来实现页面跳转<ul>
-<li>$router.push(“name”)</li>
-<li>$router.push({path:”name”})</li>
-<li>$router.push({path:”name?a=123”})或者$router.push({path:”name”,query:{a=123}})</li>
-<li>$router.go(1)</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//index.js中</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Router <span class="keyword">from</span> <span class="string">'vue-router'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> GoodsList <span class="keyword">from</span> <span class="string">'./../views/GoodsList'</span><span class="comment">//从某路径引入组件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Car <span class="keyword">from</span> <span class="string">'./../views/Car'</span><span class="comment">//从某路径引入子组件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">Vue.use(Router)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Router(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">  router:[</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">     path:<span class="string">'/goods'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">     name:<span class="string">'GoodsList'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">     component:GoodsList,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">     &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">       path:<span class="string">'/car'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">       component:Car</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">     &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">   &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"> ]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//组件GoodsList.vue中</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">  &lt;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">    &lt;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">      &lt;router-view&gt;<span class="xml"><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">    &lt;<span class="regexp">/div&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line"><span class="regexp">    &lt;router-link to="/</span>car<span class="string">"&gt;&lt;/router-link&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line"><span class="string">    &lt;button @click="</span>jump<span class="string">"&gt;&lt;/router-link&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line"><span class="string">  &lt;/div&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;/template&gt;  </span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;script&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line"><span class="string">  export default&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line"><span class="string">    data()&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line"><span class="string">      return&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line"><span class="string">        msg:'hello vue'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line"><span class="string">      &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line"><span class="string">    &#125;,</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line"><span class="string">    methods:&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line"><span class="string">      jump()&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line"><span class="string">        this.$router.push(&#123;path:'/car?goodsId=123'&#125;);//可以跳转页面...go...</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line"><span class="string">      &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line"><span class="string">    &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line"><span class="string">  &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;/script&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">47</span></pre></td><td class="code"><pre><span class="line"><span class="string"></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">48</span></pre></td><td class="code"><pre><span class="line"><span class="string">//组件Car.vue中</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">49</span></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;template&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">50</span></pre></td><td class="code"><pre><span class="line"><span class="string">  &lt;div&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">51</span></pre></td><td class="code"><pre><span class="line"><span class="string">    &lt;span&gt;&#123;&#123;$router.query.goodsId&#125;&#125;&lt;/span&gt;//页面间传参</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">52</span></pre></td><td class="code"><pre><span class="line"><span class="string">  &lt;/div&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">53</span></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;/template&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">54</span></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;script&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">55</span></pre></td><td class="code"><pre><span class="line"><span class="string">  export default&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">56</span></pre></td><td class="code"><pre><span class="line"><span class="string">    data()&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">57</span></pre></td><td class="code"><pre><span class="line"><span class="string">      return&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">58</span></pre></td><td class="code"><pre><span class="line"><span class="string">        msg:'hello vue'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">59</span></pre></td><td class="code"><pre><span class="line"><span class="string">      &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">60</span></pre></td><td class="code"><pre><span class="line"><span class="string">   &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">61</span></pre></td><td class="code"><pre><span class="line"><span class="string">  &#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">62</span></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;/script&gt;</span></span></pre></td></tr></table></figure>
-
-<h4 id="（六）命名路由命名视图"><a href="#（六）命名路由命名视图" class="headerlink" title="（六）命名路由命名视图"></a><strong>（六）命名路由命名视图</strong></h4><ul>
-<li><strong>给路由定义不同的名字，根据名字进行匹配</strong></li>
-<li><strong>给不同的router-view定义名字，通过名字进行对应组件的渲染</strong></li>
-</ul>
-<h3 id="四-axios"><a href="#四-axios" class="headerlink" title="四.axios"></a>四.axios</h3><p>Axios是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。axios主要是用于向后台发起请求的，还有在请求中做更多可控功能。官方不再维护vue-resource，推荐使用axios。</p>
-<p>axios：<a href="https://www.kancloud.cn/yunye/axios/234845" target="_blank" rel="noopener">https://www.kancloud.cn/yunye/axios/234845</a></p>
-<h4 id="（一）Axios引入"><a href="#（一）Axios引入" class="headerlink" title="（一）Axios引入"></a><strong>（一）Axios引入</strong></h4><ul>
-<li><code>&lt;script src=&quot;https://unpkg.com/axios/dist/axios.min.js&quot;&gt;&lt;/script&gt;</code></li>
-<li><code>npm install axios --save</code></li>
-</ul>
-<h4 id="（二）基础API"><a href="#（二）基础API" class="headerlink" title="（二）基础API"></a><strong>（二）基础API</strong></h4><ul>
-<li><p><strong>axios.request(config)</strong></p>
-</li>
-<li><p><strong>axios.get(url[, config])</strong></p>
-</li>
-<li><p><strong>axios.delete(url[, config])</strong></p>
-</li>
-<li><p><strong>axios.head(url[, config])</strong></p>
-</li>
-<li><p><strong>axios.options(url[, config])</strong></p>
-</li>
-<li><p><strong>axios.post(url[, data[, config]])</strong></p>
-</li>
-<li><p><strong>axios.put(url[, data[, config]])</strong></p>
-</li>
-<li><p><strong>axios.patch(url[, data[, config]])</strong></p>
-</li>
-</ul>
-<h4 id="（三）使用"><a href="#（三）使用" class="headerlink" title="（三）使用"></a><strong>（三）使用</strong></h4><ul>
-<li><strong>Get请求</strong></li>
-<li><strong>Post请求</strong></li>
-<li><strong>Http请求</strong></li>
-<li><strong>多个并发请求</strong></li>
-<li><strong>全局拦截器使用</strong></li>
-</ul>
-<h4 id="（四）Get请求"><a href="#（四）Get请求" class="headerlink" title="（四）Get请求"></a><strong>（四）Get请求</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">methods:&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">get</span>:function()&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    axios.get(<span class="string">'/user'</span>, &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    params: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">      ID: <span class="number">12345</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">response</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(response);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  .catch(<span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(error);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">  &#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h4 id="（五）Post请求"><a href="#（五）Post请求" class="headerlink" title="（五）Post请求"></a><strong>（五）Post请求</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">post:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    axios.post(<span class="string">'/user'</span>, &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">      ID: <span class="number">12345</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">response</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(response);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  .catch(<span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(error);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">  &#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h4 id="（六）Http请求"><a href="#（六）Http请求" class="headerlink" title="（六）Http请求"></a><strong>（六）Http请求</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">http:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  axios(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    url:<span class="string">"/user"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    method:<span class="string">"get"</span>,<span class="comment">//"post"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    data:&#123;<span class="attr">userId</span>:<span class="string">"101"</span>&#125;,<span class="comment">//Post</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    params:&#123;<span class="attr">userId</span>:<span class="string">"101"</span>&#125;,<span class="comment">//Get</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    headers:&#123;<span class="attr">token</span>:<span class="string">"http-test"</span>&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  &#125;).then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;<span class="keyword">this</span>.msg=res.data;&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h4 id="（七）多个并发请求"><a href="#（七）多个并发请求" class="headerlink" title="（七）多个并发请求"></a><strong>（七）多个并发请求</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getUserAccount</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">return</span> axios.get(<span class="string">'/user/12345'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getUserPermissions</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">return</span> axios.get(<span class="string">'/user/12345/permissions'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">axios.all([getUserAccount(), getUserPermissions()])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">  .then(axios.spread(<span class="function"><span class="keyword">function</span> (<span class="params">acct, perms</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 两个请求现在都执行完成</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">  &#125;));</span></pre></td></tr></table></figure>
-
-<h4 id="（八）全局拦截器"><a href="#（八）全局拦截器" class="headerlink" title="（八）全局拦截器"></a><strong>（八）全局拦截器</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">mounted:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="comment">// 添加请求拦截器</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  axios.interceptors.request.use(<span class="function"><span class="keyword">function</span> (<span class="params">config</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 在发送请求之前做些什么</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">return</span> config;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  &#125;, <span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 对请求错误做些什么</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(error);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  &#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">  <span class="comment">// 添加响应拦截器</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  axios.interceptors.response.use(<span class="function"><span class="keyword">function</span> (<span class="params">response</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 对响应数据做点什么</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">return</span> response;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">  &#125;, <span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 对响应错误做点什么</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(error);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">  &#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+<li><p>优秀的支持和社区</p>
+        
       
 
       
@@ -376,11 +389,33 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">Vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Vue/" class="article-tag-list-link color4">Vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/23/Vue/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/12/04/Vue/">展开全文 >></a>
         </p>
       
 
@@ -417,13 +452,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/09/NodeJS%E5%9F%BA%E7%A1%80/">NodeJS基础</a>
+      <a class="article-title" href="/2018/11/28/NodeJS%E5%9F%BA%E7%A1%80/">NodeJS基础</a>
     </h1>
   
 
         
-        <a href="/2019/12/09/NodeJS%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2019-12-09T13:13:47.267Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-09</time>
+        <a href="/2018/11/28/NodeJS%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+  	<time datetime="2018-11-27T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-28</time>
 </a>
         
       </header>
@@ -483,7 +518,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/NodeJS//" class="article-tag-list-link color2">NodeJS</a>
+        			<a href="/categories/NodeJS/" class="article-tag-list-link color2">NodeJS</a>
         		</li>
       		
 		</ul>
@@ -492,95 +527,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/09/NodeJS%E5%9F%BA%E7%A1%80/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-JS作用域和作用域链" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/09/JS%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/">JS作用域和作用域链</a>
-    </h1>
-  
-
-        
-        <a href="/2019/12/09/JS%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/" class="archive-article-date">
-  	<time datetime="2019-12-09T12:58:48.435Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一-作用域"><a href="#一-作用域" class="headerlink" title="一.作用域"></a>一.作用域</h3><p><strong>变量或者函数可以起作用的范围，变量退出作用域之后会销毁，全局变量关闭网页或浏览器才会销毁。</strong><br>①<strong>全局作用域</strong>：在&lt;script&gt;或者一个独立的js文件中，全局作用域中定义的变量是全局变量。在任何位置都可以访问。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">15</span>;<span class="comment">//全局变量</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  str = <span class="string">'qaq'</span>;<span class="comment">// 这里不用var声明也是全局变量（不规范）</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(num);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(str);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">fn();<span class="comment">//15 qaq</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(str);<span class="comment">//qaq</span></span></pre></td></tr></table></figure>
-<p>②<strong>局部作用域</strong>：一个函数有一个局部作用域，局部作用域中定义的变量是局部变量。局部变量只可以在定义此变量的函数里访问。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">var</span> num = <span class="number">15</span>;<span class="comment">// 局部变量</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(num);<span class="comment">// num is not defined</span></span></pre></td></tr></table></figure>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">JS基础</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript//" class="article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/09/JS%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/11/28/NodeJS%E5%9F%BA%E7%A1%80/">展开全文 >></a>
         </p>
       
 
@@ -617,13 +564,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/08/ES6%E8%AF%AD%E6%B3%95%E9%87%8D%E7%82%B9/">ES6语法重点</a>
+      <a class="article-title" href="/2018/11/26/ES6%E8%AF%AD%E6%B3%95%E9%87%8D%E7%82%B9/">ES6语法重点</a>
     </h1>
   
 
         
-        <a href="/2019/12/08/ES6%E8%AF%AD%E6%B3%95%E9%87%8D%E7%82%B9/" class="archive-article-date">
-  	<time datetime="2019-12-08T03:41:36.858Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
+        <a href="/2018/11/26/ES6%E8%AF%AD%E6%B3%95%E9%87%8D%E7%82%B9/" class="archive-article-date">
+  	<time datetime="2018-11-25T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-26</time>
 </a>
         
       </header>
@@ -660,7 +607,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript//" class="article-tag-list-link color1">JavaScript</a>
+        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
         		</li>
       		
 		</ul>
@@ -669,96 +616,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/08/ES6%E8%AF%AD%E6%B3%95%E9%87%8D%E7%82%B9/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-JS预解析" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/05/JS%E9%A2%84%E8%A7%A3%E6%9E%90/">JS预解析</a>
-    </h1>
-  
-
-        
-        <a href="/2019/12/05/JS%E9%A2%84%E8%A7%A3%E6%9E%90/" class="archive-article-date">
-  	<time datetime="2019-12-05T06:58:18.727Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一-预解析"><a href="#一-预解析" class="headerlink" title="一.预解析"></a>一.预解析</h3><p><strong>JS代码执行由浏览器中的JS解析器来执行。JS解析器执行JS代码的两个过程是预解析和代码执行。</strong></p>
-<ul>
-<li>第一步：<strong>变量提升</strong>，把变量的声明提升到当前作用域的最上面，不会提升变量赋值</li>
-<li>第二步：<strong>函数提升</strong>，把函数的声明提升到当前作用域的最上面，不会提升函数调用</li>
-<li>先提升var，在提升function<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">/*例一:变量提升*/</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(num);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">5</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//预解析</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(num);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">num = <span class="number">5</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment">/*例二:函数提升*/</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">f1();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="string">'hello'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 预解析</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="string">'hello'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">f1();</span></pre></td></tr></table></figure>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">JS基础</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript//" class="article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/05/JS%E9%A2%84%E8%A7%A3%E6%9E%90/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/11/26/ES6%E8%AF%AD%E6%B3%95%E9%87%8D%E7%82%B9/">展开全文 >></a>
         </p>
       
 
@@ -795,13 +653,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/03/jquery%E7%AC%94%E8%AE%B0/">jquery笔记</a>
+      <a class="article-title" href="/2018/10/13/jquery%E7%AC%94%E8%AE%B0/">jquery笔记</a>
     </h1>
   
 
         
-        <a href="/2019/12/03/jquery%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2019-12-03T04:41:02.854Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-03</time>
+        <a href="/2018/10/13/jquery%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2018-10-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
 </a>
         
       </header>
@@ -849,7 +707,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript//" class="article-tag-list-link color1">JavaScript</a>
+        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
         		</li>
       		
 		</ul>
@@ -858,7 +716,184 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/03/jquery%E7%AC%94%E8%AE%B0/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/10/13/jquery%E7%AC%94%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-JS预解析" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/11/JS%E9%A2%84%E8%A7%A3%E6%9E%90/">JS预解析</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/11/JS%E9%A2%84%E8%A7%A3%E6%9E%90/" class="archive-article-date">
+  	<time datetime="2018-10-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-预解析"><a href="#一-预解析" class="headerlink" title="一.预解析"></a>一.预解析</h3><p><strong>JS代码执行由浏览器中的JS解析器来执行。JS解析器执行JS代码的两个过程是预解析和代码执行。</strong></p>
+<ul>
+<li>第一步：<strong>变量提升</strong>，把变量的声明提升到当前作用域的最上面，不会提升变量赋值</li>
+<li>第二步：<strong>函数提升</strong>，把函数的声明提升到当前作用域的最上面，不会提升函数调用</li>
+<li>先提升var，在提升function<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">/*例一:变量提升*/</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(num);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">5</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//预解析</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(num);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">num = <span class="number">5</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment">/*例二:函数提升*/</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">f1();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="string">'hello'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 预解析</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="string">'hello'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">f1();</span></pre></td></tr></table></figure>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">JS基础</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/11/JS%E9%A2%84%E8%A7%A3%E6%9E%90/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-JS作用域和作用域链" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/10/JS%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/">JS作用域和作用域链</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/10/JS%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/" class="archive-article-date">
+  	<time datetime="2018-10-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-作用域"><a href="#一-作用域" class="headerlink" title="一.作用域"></a>一.作用域</h3><p><strong>变量或者函数可以起作用的范围，变量退出作用域之后会销毁，全局变量关闭网页或浏览器才会销毁。</strong><br>①<strong>全局作用域</strong>：在&lt;script&gt;或者一个独立的js文件中，全局作用域中定义的变量是全局变量。在任何位置都可以访问。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">15</span>;<span class="comment">//全局变量</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  str = <span class="string">'qaq'</span>;<span class="comment">// 这里不用var声明也是全局变量（不规范）</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(num);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(str);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">fn();<span class="comment">//15 qaq</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(str);<span class="comment">//qaq</span></span></pre></td></tr></table></figure>
+<p>②<strong>局部作用域</strong>：一个函数有一个局部作用域，局部作用域中定义的变量是局部变量。局部变量只可以在定义此变量的函数里访问。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">var</span> num = <span class="number">15</span>;<span class="comment">// 局部变量</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(num);<span class="comment">// num is not defined</span></span></pre></td></tr></table></figure>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">JS基础</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/10/JS%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/">展开全文 >></a>
         </p>
       
 
@@ -977,15 +1012,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">ES6语法</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">node</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">ES6语法</a>
               </li>
             
             <div class="clearfix"></div>

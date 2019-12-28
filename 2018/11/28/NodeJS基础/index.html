@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: jquery | Hexo</title>
+  <title>NodeJS基础 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;tags&#x2F;jquery&#x2F;index.html">
+  <meta name="description" content="一.特性&amp;amp;环境&amp;amp;测试1.特性：①非阻塞I&#x2F;O，事件驱动，单线程  非阻塞I&#x2F;O：进程不等I&#x2F;O完成（阻塞是等I&#x2F;O完成后才进行下一步） 事件驱动：异步操作结束后通知  ②优点  前端职责范围变大，统一开发体验 处理高并发（单位时间访问量增大），I&#x2F;O密集（文件操作、网络操作、数据库）场景优势明显  ③常用场景  Web Server 本地代码构建 实用工具开发  2.环境：①Com">
+<meta name="keywords" content="node">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NodeJS基础">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;11&#x2F;28&#x2F;NodeJS%E5%9F%BA%E7%A1%80&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一.特性&amp;amp;环境&amp;amp;测试1.特性：①非阻塞I&#x2F;O，事件驱动，单线程  非阻塞I&#x2F;O：进程不等I&#x2F;O完成（阻塞是等I&#x2F;O完成后才进行下一步） 事件驱动：异步操作结束后通知  ②优点  前端职责范围变大，统一开发体验 处理高并发（单位时间访问量增大），I&#x2F;O密集（文件操作、网络操作、数据库）场景优势明显  ③常用场景  Web Server 本地代码构建 实用工具开发  2.环境：①Com">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-23T09:22:53.723Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -133,71 +137,371 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-NodeJS基础" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/10/13/jquery%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2018-10-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/13/jquery%E7%AC%94%E8%AE%B0/">jquery笔记</a>
+    <h1 class="article-title" itemprop="name">
+      NodeJS基础
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/11/28/NodeJS%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+  	<time datetime="2018-11-27T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-特性-amp-环境-amp-测试"><a href="#一-特性-amp-环境-amp-测试" class="headerlink" title="一.特性&amp;环境&amp;测试"></a>一.特性&amp;环境&amp;测试</h3><p><strong>1.特性：</strong><br><strong>①非阻塞I/O，事件驱动，单线程</strong></p>
+<ul>
+<li>非阻塞I/O：进程不等I/O完成（阻塞是等I/O完成后才进行下一步）</li>
+<li>事件驱动：异步操作结束后通知</li>
+</ul>
+<p><strong>②优点</strong></p>
+<ul>
+<li>前端职责范围变大，统一开发体验</li>
+<li>处理高并发（单位时间访问量增大），I/O密集（文件操作、网络操作、数据库）场景优势明显</li>
+</ul>
+<p><strong>③常用场景</strong></p>
+<ul>
+<li>Web Server</li>
+<li>本地代码构建</li>
+<li>实用工具开发</li>
+</ul>
+<p><strong>2.环境：</strong><br><strong>①CommonJS（模块管理规范）</strong></p>
+<ul>
+<li>每一个文件是一个模块，有自己的作用域</li>
+<li>块内module变量代表块本身</li>
+<li>module.exports属性代表块对外接口</li>
+</ul>
+<p><strong>②global（全局对象）</strong></p>
+<ul>
+<li>CommonJS</li>
+<li>Buffer、console、process</li>
+<li>timer<code>process.nextTick();setTimeout();setImmediate();</code></li>
+</ul>
+<a id="more"></a>
+
+<p><strong>③process（进程）</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;argv,argvo,execArgv,execPath&#125; = process;<span class="comment">//参数相关</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;env&#125; = process;<span class="comment">//环境</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">process.cwd( );<span class="comment">//当前路径</span></span></pre></td></tr></table></figure>
+
+<p><strong>④require</strong></p>
+<ul>
+<li>/绝对路径   ./相对于当前路径 ../上一级</li>
+<li>支持js、json、node拓展名，不写明的的话就依次试</li>
+<li>不写路径认为是build-in模块或者是各级node_module内第三方模块</li>
+<li>module被加载时执行，加载后缓存</li>
+<li>若某模块被循环加载，只输出已执行部分，未执行部分不输出</li>
+</ul>
+<p><strong>⑤引用系统内置模块（chalk、fs、exps…）</strong></p>
+<p><strong>3.调试：①Inspector②VScode</strong></p>
+<h3 id="二-常用API"><a href="#二-常用API" class="headerlink" title="二.常用API"></a>二.常用API</h3><p><strong>path、Buffer、events、fs</strong></p>
+<h4 id="1-path路径"><a href="#1-path路径" class="headerlink" title="1.path路径"></a>1.path路径</h4><p><strong>const {path} = require(‘path’);</strong></p>
+<ul>
+<li>path.normalize(path);//规范化指定的 path，并处理 ‘..’ 和 ‘.’ 片段</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">path.normalize(<span class="string">'C:\\temp\\\\foo\\bar\\..\\'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回: 'C:\\temp\\foo\\'</span></span></pre></td></tr></table></figure>
+<ul>
+<li>path.join([…paths]);//使用平台特定的分隔符把所有path片段连接到一起，并规范化生成的路径</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">path.join(<span class="string">'/foo'</span>, <span class="string">'bar'</span>, <span class="string">'baz/asdf'</span>, <span class="string">'quux'</span>, <span class="string">'..'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回: '/foo/bar/baz/asdf'</span></span></pre></td></tr></table></figure>
+<ul>
+<li>path.resolve([…paths]);//将路径或路径片段的序列处理成绝对路径</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">path.resolve(<span class="string">'/foo/bar'</span>, <span class="string">'./baz'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回: '/foo/bar/baz'</span></span></pre></td></tr></table></figure>
+<ul>
+<li>path.basename(path[, ext]);//返回path的最后一部分，类似于 Unix 中的basename命令</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">path.basename(<span class="string">'/foo/bar/baz/asdf/quux.html'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回: 'quux.html'</span></span></pre></td></tr></table></figure>
+<ul>
+<li>path.extname(path);//返回path的扩展名，即从path的最后一部分中的最后一个 .（句号）字符到字符串结束</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">path.extname(<span class="string">'index.html'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回: '.html'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">path.extname(<span class="string">'index.coffee.md'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回: '.md'</span></span></pre></td></tr></table></figure>
+<ul>
+<li>path.dirname(path);//返回path的目录名，类似于 Unix 中的dirname命令</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">path.dirname(<span class="string">'/foo/bar/baz/asdf/quux'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回: '/foo/bar/baz/asdf'</span></span></pre></td></tr></table></figure>
+<ul>
+<li>path.sep;//返回平台特定的路径片段分隔符</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="string">'foo\\bar\\baz'</span>.split(path.sep);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回: ['foo', 'bar', 'baz']</span></span></pre></td></tr></table></figure>
+<ul>
+<li>path.delimiter;//返回平台特定的路径分隔符</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(process.env.PATH);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: 'C:\Windows\system32;C:\Windows;C:\Program Files\node\'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">process.env.PATH.split(path.delimiter);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回: ['C:\\Windows\\system32', 'C:\\Windows', 'C:\\Program Files\\node\\']</span></span></pre></td></tr></table></figure>
+<ul>
+<li><p>path.win32;//返回为 Windows 实现的path方法</p>
+</li>
+<li><p>path.posix;//返回为 POSIX 实现的path方法</p>
+</li>
+</ul>
+<p><strong>区别：</strong></p>
+<ul>
+<li>__dirname、__filename总返回文件的绝对路径</li>
+<li>process.cwd( )返回执行node命令所在文件夹</li>
+<li>./或者../<ul>
+<li>在require方法中总是相对当前文件所在文件夹</li>
+<li>在其他地方和process.cwd( )一样，相对node启动文件</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-Buffer缓冲"><a href="#2-Buffer缓冲" class="headerlink" title="2.Buffer缓冲"></a>2.Buffer缓冲</h4><ul>
+<li>用于处理二进制数据流</li>
+<li>实例类似整数数组，大小固定</li>
+<li>c++代码在V8堆外分配物理内存</li>
+</ul>
+<h5 id="①初始化"><a href="#①初始化" class="headerlink" title="①初始化"></a><strong>①初始化</strong></h5><ul>
+<li>Buffer.alloc(size[, fill[, encoding]]);//创建一个大小为size字节的Buffer</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf = Buffer.alloc(<span class="number">5</span>, <span class="string">'a'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: &lt;Buffer 61 61 61 61 61&gt;</span></span></pre></td></tr></table></figure>
+<ul>
+<li>Buffer.allocUnsafe(size);//创建一个大小为size字节的Buffer,Buffer的内容是未知的</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf = Buffer.allocUnsafe(<span class="number">10</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: &lt;Buffer a0 8b 28 3f 01 00 00 00 50 32&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// (输出的内容是内存的旧数据，每次都不同)</span></span></pre></td></tr></table></figure>
+<ul>
+<li>Buffer.from(array);//使用字节数组array创建Buffer</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建一个包含字符串 'buffer' 的 UTF-8 字节的 Buffer。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf = Buffer.from([<span class="number">0x62</span>, <span class="number">0x75</span>, <span class="number">0x66</span>, <span class="number">0x66</span>, <span class="number">0x65</span>, <span class="number">0x72</span>]);</span></pre></td></tr></table></figure>
+<ul>
+<li>Buffer.from(string[, encoding]);//创建一个包含string的Buffer</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf1 = Buffer.from(<span class="string">'this is a tést'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf2 = Buffer.from(<span class="string">'7468697320697320612074c3a97374'</span>, <span class="string">'hex'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf1.toString());</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: this is a tést</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf2.toString());</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: this is a tést</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf1.toString(<span class="string">'ascii'</span>));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: this is a tC)st</span></span></pre></td></tr></table></figure>
+<h5 id="②类"><a href="#②类" class="headerlink" title="②类"></a><strong>②类</strong></h5><ul>
+<li>Buffer.byteLength(string[, encoding]);//返回字符串的实际字节长度</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'\u00bd + \u00bc = \u00be'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;str&#125;</span>: <span class="subst">$&#123;str.length&#125;</span> 个字符,`</span> +<span class="string">`<span class="subst">$&#123;Buffer.byteLength(str, <span class="string">'utf8'</span>)&#125;</span> 个字节`</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: ½ + ¼ = ¾: 9 个字符, 12 个字节</span></span></pre></td></tr></table></figure>
+<ul>
+<li>Buffer.concat(list[, totalLength]);//返回一个合并了list中所有Buffer的新Buffer</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 用含有三个 `Buffer` 的数组创建一个单一的 `Buffer`。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf1 = Buffer.alloc(<span class="number">10</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf2 = Buffer.alloc(<span class="number">14</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> totalLength = buf1.length + buf2.length;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(totalLength);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: 24</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> bufA = Buffer.concat([buf1, buf2], totalLength);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(bufA);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: &lt;Buffer 00 00 00 00 ...&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(bufA.length);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: 24</span></span></pre></td></tr></table></figure>
+<ul>
+<li>Buffer.isBuffer(obj);//如果obj是一个Buffer，则返回true，否则返回false</li>
+</ul>
+<h5 id="③实例"><a href="#③实例" class="headerlink" title="③实例"></a><strong>③实例</strong></h5><p><strong>const buf = Buffer.from(‘This is a test!’);</strong></p>
+<ul>
+<li>buf.length;//回内存中分配给buf的字节数</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf = Buffer.alloc(<span class="number">1234</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf.length);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: 1234</span></span></pre></td></tr></table></figure>
+<ul>
+<li>buf.toString([encoding[, start[, end]]]);//根据encoding指定的字符编码将buf解码成字符串</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf = Buffer.from(<span class="string">'tést'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf.toString(<span class="string">'hex'</span>));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: 74c3a97374</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf.toString(<span class="string">'utf8'</span>, <span class="number">0</span>, <span class="number">3</span>));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: té</span></span></pre></td></tr></table></figure>
+<ul>
+<li>buf.fill(value[, offset[, end]][, encoding]);//用指定的value填充buf</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 用 ASCII 字符 'h' 填充 `Buffer`。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> b = Buffer.allocUnsafe(<span class="number">50</span>).fill(<span class="string">'h'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(b.toString());</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</span></span></pre></td></tr></table></figure>
+<ul>
+<li>buf.equals(otherBuffer);//如果buf与otherBuffer具有完全相同的字节，则返回true，否则返回 false</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf1 = Buffer.from(<span class="string">'ABC'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf2 = Buffer.from(<span class="string">'414243'</span>, <span class="string">'hex'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf3 = Buffer.from(<span class="string">'ABCD'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf1.equals(buf2));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: true</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf1.equals(buf3));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: false</span></span></pre></td></tr></table></figure>
+<ul>
+<li>buf.indexOf(value[, byteOffset][, encoding]);//返回buf中首次出现value的索引，如果buf没包含value则返回-1</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf = Buffer.from(<span class="string">'this is a buffer'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf.indexOf(<span class="string">'this'</span>));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: 0</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf.indexOf(<span class="string">'is'</span>));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: 2</span></span></pre></td></tr></table></figure>
+<ul>
+<li>buf.copy(target[, targetStart[, sourceStart[, sourceEnd]]]);//拷贝buf中某个区域的数据到target中的某个区域，即使target的内存区域与buf的重叠</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建两个 `Buffer`。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf1 = Buffer.allocUnsafe(<span class="number">26</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> buf2 = Buffer.allocUnsafe(<span class="number">26</span>).fill(<span class="string">'!'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">26</span>; i++) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="comment">// 97 是 'a' 的十进制 ASCII 值。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  buf1[i] = i + <span class="number">97</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 拷贝 `buf1` 中第 16 至 19 字节偏移量的数据到 `buf2` 第 8 字节偏移量开始。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">buf1.copy(buf2, <span class="number">8</span>, <span class="number">16</span>, <span class="number">20</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(buf2.toString(<span class="string">'ascii'</span>, <span class="number">0</span>, <span class="number">25</span>));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 输出: !!!!!!!!qrst!!!!!!!!!!!!!</span></span></pre></td></tr></table></figure>
+<h5 id="④字符串解码器"><a href="#④字符串解码器" class="headerlink" title="④字符串解码器"></a><strong>④字符串解码器</strong></h5><p><strong>string_decoder模块提供了一个 API，用于把Buffer对象解码成字符串</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; StringDecoder &#125; = <span class="built_in">require</span>(<span class="string">'string_decoder'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> decoder = <span class="keyword">new</span> StringDecoder(<span class="string">'utf8'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> cent = Buffer.from([<span class="number">0xC2</span>, <span class="number">0xA2</span>]);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(decoder.write(cent));</span></pre></td></tr></table></figure>
+<h4 id="3-events事件"><a href="#3-events事件" class="headerlink" title="3.events事件"></a><strong>3.events事件</strong></h4><p><strong>const EventEmitter = require(‘events’);//所有能触发时间的对象都是EventEmitter类的实例</strong></p>
+<ul>
+<li>emitter.on(eventName, listener);//添加listener函数到名为eventName的事件的监听器数组的末尾，注册监听器</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> myEE = <span class="keyword">new</span> EventEmitter();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">myEE.on(<span class="string">'foo'</span>, () =&gt; <span class="built_in">console</span>.log(<span class="string">'a'</span>));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">myEE.prependListener(<span class="string">'foo'</span>, () =&gt; <span class="built_in">console</span>.log(<span class="string">'b'</span>));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">myEE.emit(<span class="string">'foo'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// b</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// a</span></span></pre></td></tr></table></figure>
+<ul>
+<li>emitter.emit(eventName[, …args]);//按照监听器注册的顺序，同步地调用每个注册到名为 eventName的事件的监听器，并传入提供的参数，触发事件</li>
+<li>emitter.once(eventName, listener);//添加单次监听器listener到名为eventName的事件</li>
+<li>emitter.removeListener(eventName, listener);//从名为eventName的事件的监听器数组中移除指定的listener</li>
+<li>emitter.removeAllListeners([eventName]);//移除全部监听器或指定的eventName事件的监听器</li>
+</ul>
+<h4 id="4-fs文件系统"><a href="#4-fs文件系统" class="headerlink" title="4.fs文件系统"></a>4.fs文件系统</h4><p><strong>const fs = require(‘fs’);</strong></p>
+<h5 id="①读"><a href="#①读" class="headerlink" title="①读"></a><strong>①读</strong></h5><ul>
+<li>fs.readFile(path[, options], callback);//异步地读取文件的内容<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">fs.readFile(<span class="string">'/etc/passwd'</span>, <span class="string">'utf8'</span>, callback);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">fs.readFile(<span class="string">'/etc/passwd'</span>, (err, data) =&gt; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(data);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure></li>
+<li>fs.readFileSync(path[, options]);//同步返回文件的内容，同步比异步快，但是会阻塞</li>
+</ul>
+<h5 id="②写"><a href="#②写" class="headerlink" title="②写"></a><strong>②写</strong></h5><ul>
+<li>fs.writeFile(file, data[, options], callback);//异步地将数据写入文件，如果文件已存在，则覆盖文件<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">fs.writeFile(<span class="string">'文件.txt'</span>, <span class="string">'内容'</span>, <span class="string">'utf8'</span>, callback);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> data = <span class="keyword">new</span> <span class="built_in">Uint8Array</span>(Buffer.from(<span class="string">'Node.js中文网'</span>));</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">fs.writeFile(<span class="string">'文件.txt'</span>, data, (err) =&gt; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="string">'文件已保存'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+<h5 id="③状态"><a href="#③状态" class="headerlink" title="③状态"></a><strong>③状态</strong></h5></li>
+<li>fs.stat(path[, options], callback);//异步查看文件的属性<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">fs.stat(<span class="string">'文件路径'</span>, (err, stats) =&gt; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(stats.isFile( ));<span class="comment">//文件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(stats.isDirectory( ));<span class="comment">//文件夹</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(stats);<span class="comment">//状态</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+<h5 id="④重命名"><a href="#④重命名" class="headerlink" title="④重命名"></a><strong>④重命名</strong></h5></li>
+<li>fs.rename(oldPath, newPath, callback);//异步地把文件oldPath重命名为newPath<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">fs.rename(<span class="string">'旧文件.txt'</span>, <span class="string">'新文件.txt'</span>, (err) =&gt; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="string">'已完成重命名'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+<h5 id="⑤删除"><a href="#⑤删除" class="headerlink" title="⑤删除"></a><strong>⑤删除</strong></h5></li>
+<li>fs.unlink(path, callback);//异步地移除一个文件或符号链接<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 假设 'path/file.txt' 是一个普通文件。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">fs.unlink(<span class="string">'path/file.txt'</span>, (err) =&gt; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="string">'文件已删除'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure></li>
+<li>fs.readdir(path[, options], callback);//异步读取目录（文件夹）的内容</li>
+<li>fs.mkdir(path[, options], callback);//异步地创建目录<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建 /tmp/a/apple 目录，不管 `/tmp` 和 /tmp/a 目录是否存在。</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">fs.mkdir(<span class="string">'/tmp/a/apple'</span>, &#123; <span class="attr">recursive</span>: <span class="literal">true</span> &#125;, (err) =&gt; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure></li>
+<li>fs.rmdir(path, callback);//异步地删除目录</li>
+<li>fs.watch(filename[, options][, listener]);//监视filename的变化，filename可以是一个文件或一个目录</li>
+</ul>
+<h5 id="⑥流"><a href="#⑥流" class="headerlink" title="⑥流"></a><strong>⑥流</strong></h5><p>有向传输数据</p>
+<p><strong>const rs = fs.creatReadStream(‘路径’);</strong></p>
+<ul>
+<li>rs.pipe(process.stout);</li>
+</ul>
+<p><strong>const ws = fs.creatWriteStream(‘路径’);</strong></p>
+<ul>
+<li>ws.write(‘字符串’)；</li>
+<li>ws.end( );</li>
+</ul>
+<h5 id="⑦解决回调地狱"><a href="#⑦解决回调地狱" class="headerlink" title="⑦解决回调地狱"></a><strong>⑦解决回调地狱</strong></h5><p>异步回调里有回调，回调里又有回调</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> util = <span class="built_in">require</span>(<span class="string">'util'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> stat = util.promisify(fs.stat);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">stat(<span class="string">'.'</span>).then(<span class="function">(<span class="params">stats</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="comment">// Do something with `stats`</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;).catch(<span class="function">(<span class="params">error</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  <span class="comment">// Handle the error.</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> util = <span class="built_in">require</span>(<span class="string">'util'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> stat = util.promisify(fs.stat);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">callStat</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">const</span> stats = <span class="keyword">await</span> stat(<span class="string">'.'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="string">`This directory is owned by <span class="subst">$&#123;stats.uid&#125;</span>`</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color2">jquery</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">node</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
+        			<a href="/categories/NodeJS/" class="article-tag-list-link color2">NodeJS</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/11/28/NodeJS%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/12/04/Vue/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Vue
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2018/11/26/ES6%E8%AF%AD%E6%B3%95%E9%87%8D%E7%82%B9/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ES6语法重点</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-特性-amp-环境-amp-测试"><span class="toc-number">1.</span> <span class="toc-text">一.特性&amp;环境&amp;测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-常用API"><span class="toc-number">2.</span> <span class="toc-text">二.常用API</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-path路径"><span class="toc-number">2.1.</span> <span class="toc-text">1.path路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-Buffer缓冲"><span class="toc-number">2.2.</span> <span class="toc-text">2.Buffer缓冲</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#①初始化"><span class="toc-number">2.2.1.</span> <span class="toc-text">①初始化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#②类"><span class="toc-number">2.2.2.</span> <span class="toc-text">②类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#③实例"><span class="toc-number">2.2.3.</span> <span class="toc-text">③实例</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#④字符串解码器"><span class="toc-number">2.2.4.</span> <span class="toc-text">④字符串解码器</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-events事件"><span class="toc-number">2.3.</span> <span class="toc-text">3.events事件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-fs文件系统"><span class="toc-number">2.4.</span> <span class="toc-text">4.fs文件系统</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#①读"><span class="toc-number">2.4.1.</span> <span class="toc-text">①读</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#②写"><span class="toc-number">2.4.2.</span> <span class="toc-text">②写</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#③状态"><span class="toc-number">2.4.3.</span> <span class="toc-text">③状态</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#④重命名"><span class="toc-number">2.4.4.</span> <span class="toc-text">④重命名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#⑤删除"><span class="toc-number">2.4.5.</span> <span class="toc-text">⑤删除</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#⑥流"><span class="toc-number">2.4.6.</span> <span class="toc-text">⑥流</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#⑦解决回调地狱"><span class="toc-number">2.4.7.</span> <span class="toc-text">⑦解决回调地狱</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -220,9 +524,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
