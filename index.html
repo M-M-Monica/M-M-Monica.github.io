@@ -135,190 +135,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-正则表达式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/28/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
-    </h1>
-  
-
-        
-        <a href="/2019/12/28/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="archive-article-date">
-  	<time datetime="2019-12-28T14:59:44.873Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一-常用元字符串"><a href="#一-常用元字符串" class="headerlink" title="一.常用元字符串"></a>一.常用元字符串</h3><table>
-<thead>
-<tr>
-<th>元字符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>\d</td>
-<td>匹配数字</td>
-</tr>
-<tr>
-<td>\D</td>
-<td>匹配任意非数字的字符</td>
-</tr>
-<tr>
-<td>\w</td>
-<td>匹配字母或数字或下划线</td>
-</tr>
-<tr>
-<td>\W</td>
-<td>匹配任意不是字母或数字或下划线</td>
-</tr>
-<tr>
-<td>\s</td>
-<td>匹配任意空白符</td>
-</tr>
-<tr>
-<td>\S</td>
-<td>匹配任意不是空白符的字符</td>
-</tr>
-<tr>
-<td>.</td>
-<td>匹配除换行符以外的任意单个字符</td>
-</tr>
-<tr>
-<td>^</td>
-<td>以什么开始</td>
-</tr>
-<tr>
-<td>$</td>
-<td>以什么结束</td>
-</tr>
-</tbody></table>
-<h3 id="二-限定符"><a href="#二-限定符" class="headerlink" title="二.限定符"></a>二.限定符</h3><table>
-<thead>
-<tr>
-<th>限定符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>*</td>
-<td>重复0次或更多次</td>
-</tr>
-<tr>
-<td>+</td>
-<td>重复1次或更多次</td>
-</tr>
-<tr>
-<td>?</td>
-<td>重复0次或1次</td>
-</tr>
-<tr>
-<td>{n}</td>
-<td>重复n次</td>
-</tr>
-<tr>
-<td>{n},</td>
-<td>重复n次或更多次</td>
-</tr>
-<tr>
-<td>{n,m}</td>
-<td>重复n到m次</td>
-</tr>
-</tbody></table>
-<h3 id="三-其他"><a href="#三-其他" class="headerlink" title="三.其他"></a>三.其他</h3><ul>
-<li>[]字符串用中括号括起来表示匹配其中任一字符，相当于或的意思</li>
-<li>[^]匹配中括号以内的内容</li>
-<li>\转义符</li>
-<li>|或，选两者中一个（|将左右分成两部分，不管左右两边多长）</li>
-<li>()二选一分组（gra(a|e)y匹配gray和grey）</li>
-<li>[\u4e00-\u9fa5]匹配汉字</li>
-</ul>
-<h3 id="四-javascript中使用正则"><a href="#四-javascript中使用正则" class="headerlink" title="四.javascript中使用正则"></a>四.javascript中使用正则</h3><ul>
-<li>var reg = new RegExp(‘\d’, ‘i’);</li>
-<li>var reg = /\d/i;<table>
-<thead>
-<tr>
-<th>标志</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>i</td>
-<td>忽略大小写</td>
-</tr>
-<tr>
-<td>g</td>
-<td>全局匹配</td>
-</tr>
-<tr>
-<td>ig</td>
-<td>忽略大小写+全局匹配</td>
-</tr>
-</tbody></table>
-</li>
-<li><strong>匹配</strong>：正则表达式.test(“字符串”)</li>
-<li><strong>提取</strong>：”字符串”.match(正则表达式)</li>
-<li><strong>替换</strong>：”字符串”.replace(正则表达式,”替换内容”)</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">正则</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/28/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-Vue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -416,6 +232,110 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/12/04/Vue/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Less和Sass" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/30/Less%E5%92%8CSass/">Less和Sass入门</a>
+    </h1>
+  
+
+        
+        <a href="/2018/11/30/Less%E5%92%8CSass/" class="archive-article-date">
+  	<time datetime="2018-11-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-介绍"><a href="#一-介绍" class="headerlink" title="一.介绍"></a>一.介绍</h3><p>Less/Sass这样的基于CSS的另一种语言，通过工具编译成CSS，添加了很多CSS不具备的特性。</p>
+<h3 id="二-安装和使用"><a href="#二-安装和使用" class="headerlink" title="二.安装和使用"></a>二.安装和使用</h3><ul>
+<li><p>Less：</p>
+<ul>
+<li><p>Node.js环境中使用：</p>
+<ul>
+<li><code>npm install less</code></li>
+<li><code>lessc xxx.less</code></li>
+</ul>
+</li>
+<li><p>浏览器环境中使用</p>
+<ul>
+<li><p><code>&lt;link rel=&quot;stylesheet/less&quot; type=&quot;text/css&quot; href=&quot;styles.less&quot; /&gt;</code></p>
+</li>
+<li><p><code>&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/less.js/3.10.0-beta/less.min.js&quot; &gt;&lt;/script&gt;</code> </p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Sass：</p>
+<ul>
+<li><code>npm install node-sass</code></li>
+<li><code>node-sass xxx.scss</code></li>
+</ul>
+</li>
+</ul>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">Less</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">Sass</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/11/30/Less%E5%92%8CSass/">展开全文 >></a>
         </p>
       
 
@@ -923,6 +843,134 @@
 
 
   
+    <article id="post-正则表达式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
+    </h1>
+  
+
+        
+        <a href="/2018/09/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="archive-article-date">
+  	<time datetime="2018-09-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-常用元字符串"><a href="#一-常用元字符串" class="headerlink" title="一.常用元字符串"></a>一.常用元字符串</h3><table>
+<thead>
+<tr>
+<th align="center">元字符</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">\d</td>
+<td align="left">匹配数字</td>
+</tr>
+<tr>
+<td align="center">\D</td>
+<td align="left">匹配任意非数字的字符</td>
+</tr>
+<tr>
+<td align="center">\w</td>
+<td align="left">匹配字母或数字或下划线</td>
+</tr>
+<tr>
+<td align="center">\W</td>
+<td align="left">匹配任意不是字母或数字或下划线</td>
+</tr>
+<tr>
+<td align="center">\s</td>
+<td align="left">匹配任意空白符</td>
+</tr>
+<tr>
+<td align="center">\S</td>
+<td align="left">匹配任意不是空白符的字符</td>
+</tr>
+<tr>
+<td align="center">.</td>
+<td align="left">匹配除换行符以外的任意单个字符</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="left">以什么开始</td>
+</tr>
+<tr>
+<td align="center">$</td>
+<td align="left">以什么结束</td>
+</tr>
+</tbody></table>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">正则</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/09/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
 
 
@@ -1029,6 +1077,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">ES6语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Less</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Sass</a>
               </li>
             
             <div class="clearfix"></div>
