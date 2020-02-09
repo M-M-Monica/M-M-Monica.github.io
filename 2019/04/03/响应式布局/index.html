@@ -6,16 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>分类 | Hexo</title>
+  <title>响应式布局 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JavaScriptCSS通信VueNodeJS">
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;categories&#x2F;index.html">
+  <meta name="description" content="一.为什么要响应式布局不同设备的屏幕大小不同，网页要在不同大小屏幕上正常显示就需要响应式布局（网页布局随屏幕大小改变）。 二.方法 超出则隐藏(overflow)文字折行(word-break&#x2F;overflow-wrap)相对宽度(%&#x2F;vh&#x2F;vw&#x2F;rem)自适应(浮动&#x2F;绝对定位&#x2F;flexbox&#x2F;table-cell&#x2F;grid) viewport&amp;lt;meta name&#x3D;&amp;quot;viewpor">
+<meta name="keywords" content="响应式布局">
+<meta property="og:type" content="article">
+<meta property="og:title" content="响应式布局">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;04&#x2F;03&#x2F;%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="JavaScriptCSS通信VueNodeJS">
+<meta property="og:description" content="一.为什么要响应式布局不同设备的屏幕大小不同，网页要在不同大小屏幕上正常显示就需要响应式布局（网页布局随屏幕大小改变）。 二.方法 超出则隐藏(overflow)文字折行(word-break&#x2F;overflow-wrap)相对宽度(%&#x2F;vh&#x2F;vw&#x2F;rem)自适应(浮动&#x2F;绝对定位&#x2F;flexbox&#x2F;table-cell&#x2F;grid) viewport&amp;lt;meta name&#x3D;&amp;quot;viewpor">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-14T03:25:40.839Z">
+<meta property="og:updated_time" content="2020-02-09T07:56:36.175Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -136,27 +137,34 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-响应式布局" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      分类
+      响应式布局
     </h1>
   
 
         
-        <a href="/categories/index.html" class="archive-article-date">
-  	<time datetime="2019-12-05T08:07:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-05</time>
+        <a href="/2019/04/03/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/" class="archive-article-date">
+  	<time datetime="2019-04-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="/categories/JavaScript/">JavaScript</a><br><a href="/categories/CSS/">CSS</a><br><a href="/categories/通信/">通信</a><br><a href="/categories/Vue/">Vue</a><br><a href="/categories/NodeJS/">NodeJS</a></p>
+        <h3 id="一-为什么要响应式布局"><a href="#一-为什么要响应式布局" class="headerlink" title="一.为什么要响应式布局"></a>一.为什么要响应式布局</h3><p>不同设备的屏幕大小不同，网页要在不同大小屏幕上正常显示就需要响应式布局（网页布局随屏幕大小改变）。</p>
+<h3 id="二-方法"><a href="#二-方法" class="headerlink" title="二.方法"></a>二.方法</h3><ul>
+<li>超出则隐藏(overflow)文字折行(word-break/overflow-wrap)相对宽度(%/vh/vw/rem)自适应(浮动/绝对定位/flexbox/table-cell/grid)</li>
+<li>viewport<br><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;/&gt;</code></li>
+<li>media query<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">@media(max-width:xxxpx)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	<span class="selector-class">.wrap</span>&#123;<span class="attribute">display</span>:none;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure></li>
+<li>rem<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">@media(max-width:xxxpx)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">/*r:root,以后样式大小以html的字体大小为根据，写作xxxrem,不同屏幕大小的html的字体大小不一样，则其他样式的大小也相应改变。还有一种是em,参考对象是父元素文本大小*/</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	<span class="selector-tag">html</span>&#123;<span class="attribute">font-size</span>:xxpx;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure></li>
+<li>Bootstrap的栅格布局</li>
+</ul>
 
       
 
@@ -165,7 +173,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">响应式布局</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/CSS/" class="article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -215,7 +245,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/categories/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/03/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -227,6 +257,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/02/Bootstrap%E4%BD%BF%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Bootstrap使用</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -248,7 +288,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-为什么要响应式布局"><span class="toc-number">1.</span> <span class="toc-text">一.为什么要响应式布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-方法"><span class="toc-number">2.</span> <span class="toc-text">二.方法</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -290,7 +330,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
