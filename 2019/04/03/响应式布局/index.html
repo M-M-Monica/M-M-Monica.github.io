@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>响应式布局 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一.为什么要响应式布局不同设备的屏幕大小不同，网页要在不同大小屏幕上正常显示就需要响应式布局（网页布局随屏幕大小改变）。 二.方法 超出则隐藏(overflow)文字折行(word-break&#x2F;overflow-wrap)相对宽度(%&#x2F;vh&#x2F;vw&#x2F;rem)自适应(浮动&#x2F;绝对定位&#x2F;flexbox&#x2F;table-cell&#x2F;grid) viewport&amp;lt;meta name&#x3D;&amp;quot;viewpor">
+  <meta name="description" content="一.为什么要响应式布局不同设备的屏幕大小不同，网页要在不同大小屏幕上正常显示就需要响应式布局（网页布局随屏幕大小改变）。 二.方法 超出则隐藏(overflow)文字折行(word-break&#x2F;overflow-wrap)自适应(浮动&#x2F;绝对定位&#x2F;flexbox&#x2F;table-cell&#x2F;grid) viewport：&amp;lt;meta name&#x3D;&amp;quot;viewport&amp;quot; content&#x3D;">
 <meta name="keywords" content="响应式布局">
 <meta property="og:type" content="article">
 <meta property="og:title" content="响应式布局">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;04&#x2F;03&#x2F;%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一.为什么要响应式布局不同设备的屏幕大小不同，网页要在不同大小屏幕上正常显示就需要响应式布局（网页布局随屏幕大小改变）。 二.方法 超出则隐藏(overflow)文字折行(word-break&#x2F;overflow-wrap)相对宽度(%&#x2F;vh&#x2F;vw&#x2F;rem)自适应(浮动&#x2F;绝对定位&#x2F;flexbox&#x2F;table-cell&#x2F;grid) viewport&amp;lt;meta name&#x3D;&amp;quot;viewpor">
+<meta property="og:description" content="一.为什么要响应式布局不同设备的屏幕大小不同，网页要在不同大小屏幕上正常显示就需要响应式布局（网页布局随屏幕大小改变）。 二.方法 超出则隐藏(overflow)文字折行(word-break&#x2F;overflow-wrap)自适应(浮动&#x2F;绝对定位&#x2F;flexbox&#x2F;table-cell&#x2F;grid) viewport：&amp;lt;meta name&#x3D;&amp;quot;viewport&amp;quot; content&#x3D;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-09T07:56:36.175Z">
+<meta property="og:updated_time" content="2020-02-09T08:06:24.442Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -159,10 +159,22 @@
       
         <h3 id="一-为什么要响应式布局"><a href="#一-为什么要响应式布局" class="headerlink" title="一.为什么要响应式布局"></a>一.为什么要响应式布局</h3><p>不同设备的屏幕大小不同，网页要在不同大小屏幕上正常显示就需要响应式布局（网页布局随屏幕大小改变）。</p>
 <h3 id="二-方法"><a href="#二-方法" class="headerlink" title="二.方法"></a>二.方法</h3><ul>
-<li>超出则隐藏(overflow)文字折行(word-break/overflow-wrap)相对宽度(%/vh/vw/rem)自适应(浮动/绝对定位/flexbox/table-cell/grid)</li>
-<li>viewport<br><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;/&gt;</code></li>
-<li>media query<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">@media(max-width:xxxpx)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	<span class="selector-class">.wrap</span>&#123;<span class="attribute">display</span>:none;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure></li>
-<li>rem<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">@media(max-width:xxxpx)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">/*r:root,以后样式大小以html的字体大小为根据，写作xxxrem,不同屏幕大小的html的字体大小不一样，则其他样式的大小也相应改变。还有一种是em,参考对象是父元素文本大小*/</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	<span class="selector-tag">html</span>&#123;<span class="attribute">font-size</span>:xxpx;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure></li>
+<li>超出则隐藏(overflow)文字折行(word-break/overflow-wrap)自适应(浮动/绝对定位/flexbox/table-cell/grid)</li>
+<li>viewport：<code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;/&gt;</code></li>
+<li>media query</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">@media(max-width:xxxpx)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="selector-class">.wrap</span>&#123;<span class="attribute">display</span>:none;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<ul>
+<li>相对大小(%/vh/vw/rem)<ul>
+<li>vh/vw：相对于viewport高度/宽度分为100份，xxvh占viewport高度xx份</li>
+<li>rem</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">@media(max-width:xxxpx)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">/*r:root,以后样式大小以html的字体大小为根据，写作xxxrem,不同屏幕大小的html的字体大小不一样，则其他样式的大小也相应改变。还有一种是em,参考对象是父元素文本大小*/</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="selector-tag">html</span>&#123;<span class="attribute">font-size</span>:xxpx;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<ul>
 <li>Bootstrap的栅格布局</li>
 </ul>
 
@@ -258,6 +270,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2020/02/10/Vue%E5%B0%8F%E9%A1%B9%E7%9B%AE%E4%BA%8C%E6%89%8B%E4%B9%A6%E5%95%86%E5%9F%8E1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Vue小项目二手书商城:(一)建立框架
+        
+      </div>
+    </a>
   
   
     <a href="/2019/04/02/Bootstrap%E4%BD%BF%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
@@ -392,23 +413,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Ajax</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Bootstrap</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">二手书商城</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">JS基础</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -420,7 +437,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Vue</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">响应式布局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -428,11 +453,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">ES6语法</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">响应式布局</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">ES6语法</a>
               </li>
             
             <div class="clearfix"></div>
