@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="一.基础 入口函数(文档树加载完成就开始执行)：$(document).ready(function() {})和$(function() {}) $就是一个函数:$();$ &#x3D;&#x3D;&#x3D; jQuery参数不一样，功能不一样 jQuery对象与DOM对象之间的转换，jQuery对象其实就是DOM对象的包装集 jquery对象转DOM对象：var $li &#x3D; $(&amp;quot;li&amp;quot;);通过$li">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-29T03:14:28.264Z">
+<meta property="og:updated_time" content="2020-02-27T08:22:40.781Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -231,17 +231,20 @@
 <li><strong>克隆</strong>节点clone</li>
 </ul>
 <h3 id="六-动画"><a href="#六-动画" class="headerlink" title="六.动画"></a>六.动画</h3><ul>
-<li><strong>三组基本动画</strong><ul>
+<li><p><strong>三组基本动画</strong></p>
+<ul>
 <li>基本效果show/hide</li>
 <li>滑动slideDown/slideUp/slideToggle</li>
 <li>淡入淡出fadeIn/fadeOut/fadeToggle</li>
 </ul>
 </li>
-<li><strong>自定义动画</strong><ul>
-<li>animate(prop, [speed], [swing/linear], [callback])</li>
+<li><p><strong>自定义动画</strong></p>
+<ul>
+<li><code>$(selector).animate({params},speed,callback);</code></li>
 </ul>
 </li>
-<li><strong>停止动画</strong>stop</li>
+<li><p><strong>停止动画</strong>stop</p>
+</li>
 </ul>
 <h3 id="七-特殊属性操作"><a href="#七-特殊属性操作" class="headerlink" title="七.特殊属性操作"></a>七.特殊属性操作</h3><ul>
 <li><code>$(&quot;#name&quot;).val()</code>：设置和获取表单元素的值input、textarea</li>
@@ -281,7 +284,7 @@
 <h3 id="九-补充"><a href="#九-补充" class="headerlink" title="九.补充"></a>九.补充</h3><ul>
 <li>链式编程：end()//改变jQ对象的DOM对象，回复到上一次状态，并返回匹配元素之前的状态</li>
 <li>each()方法：遍历对象，操作匹配元素</li>
-<li>多库共存：<code>var c = \$.noConflict();//释放的控制权,并且把\$的能力给了c</code></li>
+<li>多库共存：<code>var c = $.noConflict();//释放的控制权,并且把$的能力给了c</code></li>
 </ul>
 <h3 id="十-插件"><a href="#十-插件" class="headerlink" title="十.插件"></a>十.插件</h3><ul>
 <li>常用插件：jquery.color.js支持颜色的渐变、jquery.lazyload.js懒加载插件、jquery.ui.js官方维护的UI方向的插件……</li>
@@ -523,15 +526,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Ajax</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Bootstrap</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">JS基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Ajax</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -543,15 +550,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">二手书商城</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">响应式布局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">二手书商城</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -559,11 +562,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">node</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Vue</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">

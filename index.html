@@ -448,7 +448,7 @@
 
 <ul>
 <li>相对大小(%/vh/vw/rem)<ul>
-<li>vh/vw：相对于viewport高度/宽度分为100份，xxvh占viewport高度xx份</li>
+<li>vh/vw：viewport高度/宽度分为100份，xxvh占viewport高度xx份</li>
 <li>rem</li>
 </ul>
 </li>
@@ -710,19 +710,19 @@
 
 
   
-    <article id="post-Vue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Vue1基础语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/04/Vue/">Vue基础</a>
+      <a class="article-title" href="/2018/12/04/Vue1%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">Vue:(一)基础语法</a>
     </h1>
   
 
         
-        <a href="/2018/12/04/Vue/" class="archive-article-date">
+        <a href="/2018/12/04/Vue1%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="archive-article-date">
   	<time datetime="2018-12-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-04</time>
 </a>
         
@@ -772,6 +772,10 @@
 <li><p>易于集成路由工具，打包工具以及状态管理工具</p>
 </li>
 <li><p>优秀的支持和社区</p>
+</li>
+</ul>
+</li>
+</ul>
         
       
 
@@ -806,7 +810,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/12/04/Vue/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/12/04/Vue1%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">展开全文 >></a>
         </p>
       
 
@@ -836,51 +840,48 @@
 
 
   
-    <article id="post-Less和Sass" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Vue3Axios" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/30/Less%E5%92%8CSass/">Less和Sass入门</a>
+      <a class="article-title" href="/2018/12/04/Vue3Axios/">Vue:(三)通信</a>
     </h1>
   
 
         
-        <a href="/2018/11/30/Less%E5%92%8CSass/" class="archive-article-date">
-  	<time datetime="2018-11-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-30</time>
+        <a href="/2018/12/04/Vue3Axios/" class="archive-article-date">
+  	<time datetime="2018-12-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一-介绍"><a href="#一-介绍" class="headerlink" title="一.介绍"></a>一.介绍</h3><p>Less/Sass这样的基于CSS的另一种语言，通过工具编译成CSS，添加了很多CSS不具备的特性。</p>
-<h3 id="二-安装和使用"><a href="#二-安装和使用" class="headerlink" title="二.安装和使用"></a>二.安装和使用</h3><ul>
-<li><p>Less：</p>
-<ul>
-<li><p>Node.js环境中使用：</p>
-<ul>
-<li><code>npm install less</code></li>
-<li><code>lessc xxx.less</code></li>
+        <h3 id="Axios"><a href="#Axios" class="headerlink" title="Axios"></a>Axios</h3><p>Axios是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。axios主要是用于向后台发起请求的，还有在请求中做更多可控功能。官方不再维护vue-resource，推荐使用axios。</p>
+<p>axios：<a href="https://www.kancloud.cn/yunye/axios/234845" target="_blank" rel="noopener">https://www.kancloud.cn/yunye/axios/234845</a></p>
+<h4 id="1-Axios引入"><a href="#1-Axios引入" class="headerlink" title="1.Axios引入"></a><strong>1.Axios引入</strong></h4><ul>
+<li><code>&lt;script src=&quot;https://unpkg.com/axios/dist/axios.min.js&quot;&gt;&lt;/script&gt;</code></li>
+<li><code>npm install axios --save</code></li>
 </ul>
+<h4 id="2-基础API"><a href="#2-基础API" class="headerlink" title="2.基础API"></a><strong>2.基础API</strong></h4><ul>
+<li><p>axios.request(config)</p>
 </li>
-<li><p>浏览器环境中使用</p>
-<ul>
-<li><p><code>&lt;link rel=&quot;stylesheet/less&quot; type=&quot;text/css&quot; href=&quot;styles.less&quot; /&gt;</code></p>
+<li><p>axios.get(url[, config])</p>
 </li>
-<li><p><code>&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/less.js/3.10.0-beta/less.min.js&quot; &gt;&lt;/script&gt;</code> </p>
+<li><p>axios.delete(url[, config])</p>
 </li>
-</ul>
+<li><p>axios.head(url[, config])</p>
 </li>
-</ul>
+<li><p>axios.options(url[, config])</p>
 </li>
-<li><p>Sass：</p>
-<ul>
-<li><code>npm install node-sass</code></li>
-<li><code>node-sass xxx.scss</code></li>
-</ul>
+<li><p>axios.post(url[, data[, config]])</p>
+</li>
+<li><p>axios.put(url[, data[, config]])</p>
+</li>
+<li><p>axios.patch(url[, data[, config]])</p>
 </li>
 </ul>
         
@@ -896,11 +897,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">Less</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">Sass</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">Vue</a>
         		</li>
       		
 		</ul>
@@ -912,7 +909,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/CSS/" class="article-tag-list-link color4">CSS</a>
+        			<a href="/categories/Vue/" class="article-tag-list-link color4">Vue</a>
         		</li>
       		
 		</ul>
@@ -921,7 +918,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/11/30/Less%E5%92%8CSass/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/12/04/Vue3Axios/">展开全文 >></a>
         </p>
       
 
@@ -1040,15 +1037,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Ajax</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Bootstrap</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">JS基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Ajax</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1060,15 +1061,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">二手书商城</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">响应式布局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">二手书商城</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1076,11 +1073,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">node</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Vue</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">

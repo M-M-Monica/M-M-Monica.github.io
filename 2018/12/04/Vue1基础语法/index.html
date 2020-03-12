@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Less | Hexo</title>
+  <title>Vue:(一)基础语法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;tags&#x2F;Less&#x2F;index.html">
+  <meta name="description" content="一.概况1.Vue概况  Vue本身并不是一个框架 Vue结合周边生态构成一个灵活的、渐进式框架 声明式渲染 组件系统 客户端路由 状态管理 构建工具    2.Vue核心思想：数据驱动、组件化 3.Vue和React对比  Vue  模板和渲染函数的弹性选择 简单的语法及项目构建 更快的渲染速度和更小的体积   React  更适用大型应用和更好的可测试性 同时适用于Web端和原生App 更大的">
+<meta name="keywords" content="Vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue:(一)基础语法">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;12&#x2F;04&#x2F;Vue1%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一.概况1.Vue概况  Vue本身并不是一个框架 Vue结合周边生态构成一个灵活的、渐进式框架 声明式渲染 组件系统 客户端路由 状态管理 构建工具    2.Vue核心思想：数据驱动、组件化 3.Vue和React对比  Vue  模板和渲染函数的弹性选择 简单的语法及项目构建 更快的渲染速度和更小的体积   React  更适用大型应用和更好的可测试性 同时适用于Web端和原生App 更大的">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;image&#x2F;mvvm.jpg">
+<meta property="og:updated_time" content="2020-03-12T12:45:01.011Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;image&#x2F;mvvm.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -133,75 +139,294 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Vue1基础语法" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/30/Less%E5%92%8CSass/" class="archive-article-date">
-  	<time datetime="2018-11-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-30</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/30/Less%E5%92%8CSass/">Less和Sass入门</a>
+    <h1 class="article-title" itemprop="name">
+      Vue:(一)基础语法
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/12/04/Vue1%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2018-12-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-概况"><a href="#一-概况" class="headerlink" title="一.概况"></a>一.概况</h3><p><strong>1.Vue概况</strong></p>
+<ul>
+<li><strong>Vue本身并不是一个框架</strong></li>
+<li><strong>Vue结合周边生态构成一个灵活的、渐进式框架</strong><ul>
+<li>声明式渲染</li>
+<li>组件系统</li>
+<li>客户端路由</li>
+<li>状态管理</li>
+<li>构建工具</li>
+</ul>
+</li>
+</ul>
+<p><strong>2.Vue核心思想</strong>：数据驱动、组件化</p>
+<p><strong>3.Vue和React对比</strong></p>
+<ul>
+<li><p><strong>Vue</strong></p>
+<ul>
+<li>模板和渲染函数的弹性选择</li>
+<li>简单的语法及项目构建</li>
+<li>更快的渲染速度和更小的体积</li>
+</ul>
+</li>
+<li><p><strong>React</strong></p>
+<ul>
+<li>更适用大型应用和更好的可测试性</li>
+<li>同时适用于Web端和原生App</li>
+<li>更大的生态圈带来的更多支持和工具</li>
+</ul>
+</li>
+<li><p><strong>Vue和React相同点</strong></p>
+<ul>
+<li><p>利用虚拟DOM实现快速渲染</p>
+</li>
+<li><p>轻量级</p>
+</li>
+<li><p>响应式组件</p>
+</li>
+<li><p>服务器端渲染</p>
+</li>
+<li><p>易于集成路由工具，打包工具以及状态管理工具</p>
+</li>
+<li><p>优秀的支持和社区</p>
+</li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+
+<p><strong>4.Vue环境搭建</strong></p>
+<ul>
+<li><strong>Vue多页面应用文件引用</strong><code>&lt;script src=&quot;http://unpkg.com/vue/dist/vue.js&quot;&gt;&lt;/script&gt;</code></li>
+<li><strong>vue-cli构建单页面应用</strong><ul>
+<li>npm install -g vue-cli（vue-cli3安装npm install -g @vue/cli）<a href="https://cli.vuejs.org/zh/guide/installation.html" target="_blank" rel="noopener">点我跳转官方文档</a></li>
+<li>vue init webpack-simple demo（简单demo）</li>
+<li>vue init webpack demo（复杂demo）</li>
+</ul>
+</li>
+</ul>
+<p><strong>5.MVVM</strong></p>
+<p> <img src="/image/mvvm.jpg" alt="img"> </p>
+<h3 id="二-基础常用语法"><a href="#二-基础常用语法" class="headerlink" title="二.基础常用语法"></a>二.基础常用语法</h3><h4 id="1-模板语法"><a href="#1-模板语法" class="headerlink" title="1.模板语法"></a><strong>1.模板语法</strong></h4><ul>
+<li><strong>Mustache语法</strong>：</li>
+<li><strong>Html赋值：</strong>v-html = “ “</li>
+<li><strong>绑定属性：</strong>v-bind：id = “ “</li>
+<li><strong>使用表达式：</strong></li>
+<li><strong>文本赋值：</strong>v-text = “ “</li>
+<li><strong>指令：</strong>v-if = “ “</li>
+<li><strong>过滤器：</strong>和v-bind：id = “ rawId | formatId “</li>
+</ul>
+<h4 id="2-计算属性和侦听器"><a href="#2-计算属性和侦听器" class="headerlink" title="2.计算属性和侦听器"></a><strong>2.计算属性和侦听器</strong></h4><ul>
+<li><strong>computed</strong></li>
+<li><strong>watch</strong></li>
+</ul>
+<h4 id="3-Class和Style绑定"><a href="#3-Class和Style绑定" class="headerlink" title="3.Class和Style绑定"></a><strong>3.Class和Style绑定</strong></h4><ul>
+<li><strong>对象语法：</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">v-bind：<span class="class"><span class="keyword">class</span> </span>= <span class="string">"&#123; active：isActive, 'text-danger'：hasError &#125;"</span></span></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>数组语法：</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;div v-bind：<span class="class"><span class="keyword">class</span> </span>= <span class="string">"[activeClass,errorClass]"</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">data：&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  activeClass：<span class="string">'active'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  errorClass：<span class="string">'text-danger'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>style绑定–对象语法：</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">v-bind：style = <span class="string">"&#123; color：activeColor, fontSize：fontSize + 'px' &#125;"</span></span></pre></td></tr></table></figure>
+
+<h4 id="4-条件渲染"><a href="#4-条件渲染" class="headerlink" title="4.条件渲染"></a><strong>4.条件渲染</strong></h4><ul>
+<li><strong>v-if</strong></li>
+<li><strong>v-else</strong></li>
+<li><strong>v-else-if</strong></li>
+<li><strong>v-show</strong></li>
+<li><strong>v-cloak</strong></li>
+</ul>
+<h4 id="5-列表渲染"><a href="#5-列表渲染" class="headerlink" title="5.列表渲染"></a><strong>5.列表渲染</strong></h4><ul>
+<li><strong>v-for</strong></li>
+</ul>
+<h4 id="6-事件处理"><a href="#6-事件处理" class="headerlink" title="6.事件处理"></a><strong>6.事件处理</strong></h4><ul>
+<li>v-on：click = “greet”或者@click = “greet”<ul>
+<li><strong>事件修饰符</strong>v-on：click.stop（.prevent、.self、.once）</li>
+</ul>
+</li>
+<li>v-on：keyup<ul>
+<li><strong>事件修饰符</strong>v-on：keyup.enter（.tab、.delete、.esc、.space、.up、.down、.left、.right）</li>
+</ul>
+</li>
+</ul>
+<h4 id="7-表单输入绑定"><a href="#7-表单输入绑定" class="headerlink" title="7.表单输入绑定"></a><strong>7.表单输入绑定</strong></h4><ul>
+<li><strong>v-model</strong></li>
+</ul>
+<h4 id="8-Vue组件"><a href="#8-Vue组件" class="headerlink" title="8.Vue组件"></a><strong>8.Vue组件</strong></h4><ul>
+<li><strong>全局组件和局部组件</strong></li>
+<li><strong>父子组件通讯–数据传递</strong></li>
+<li><strong>Slot插槽</strong></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">Less</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">Sass</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">Vue</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/CSS/" class="article-tag-list-link color4">CSS</a>
+        			<a href="/categories/Vue/" class="article-tag-list-link color4">Vue</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/12/04/Vue1%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/03/28/Ajax%E4%BD%BF%E7%94%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Ajax使用
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2018/12/04/Vue3Axios/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Vue:(三)通信</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-概况"><span class="toc-number">1.</span> <span class="toc-text">一.概况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-基础常用语法"><span class="toc-number">2.</span> <span class="toc-text">二.基础常用语法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-模板语法"><span class="toc-number">2.1.</span> <span class="toc-text">1.模板语法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-计算属性和侦听器"><span class="toc-number">2.2.</span> <span class="toc-text">2.计算属性和侦听器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Class和Style绑定"><span class="toc-number">2.3.</span> <span class="toc-text">3.Class和Style绑定</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-条件渲染"><span class="toc-number">2.4.</span> <span class="toc-text">4.条件渲染</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-列表渲染"><span class="toc-number">2.5.</span> <span class="toc-text">5.列表渲染</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-事件处理"><span class="toc-number">2.6.</span> <span class="toc-text">6.事件处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-表单输入绑定"><span class="toc-number">2.7.</span> <span class="toc-text">7.表单输入绑定</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-Vue组件"><span class="toc-number">2.8.</span> <span class="toc-text">8.Vue组件</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -224,9 +449,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
