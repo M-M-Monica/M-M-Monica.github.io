@@ -135,19 +135,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Vue2VueRouter" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Vue4生命周期" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/04/Vue2VueRouter/">Vue:(二)路由</a>
+      <a class="article-title" href="/2018/12/04/Vue4%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">Vue:(四)生命周期</a>
     </h1>
   
 
         
-        <a href="/2018/12/04/Vue2VueRouter/" class="archive-article-date">
+        <a href="/2018/12/04/Vue4%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="archive-article-date">
   	<time datetime="2018-12-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-04</time>
 </a>
         
@@ -155,35 +155,135 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Vue-Router"><a href="#Vue-Router" class="headerlink" title="Vue Router"></a>Vue Router</h3><h4 id="1-基础介绍"><a href="#1-基础介绍" class="headerlink" title="1.基础介绍"></a><strong>1.基础介绍</strong></h4><ul>
-<li><strong>vue-router用来构建SPA</strong>(单页面应用)</li>
-<li>什么是前端路由？<ul>
-<li>路由是根据不同url地址展示不同的内容或页面</li>
-<li>前端路由就是把不同路由对应不同的内容或页面的任务交给前端来做，之前是通过服务端根据url的不同返回不同的页面实现的</li>
+        <h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p>刚初始化的vue实例对象上，只有一些默认的生命周期函数和默认事件。生命周期函数和普通函数没什么区别，不过生命周期函数是你初始化实例对象时它就有的，使用时注意操作的对象在这个生命周期函数执行前是否已经初始化好了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//例：</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">data()&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">return</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    book: []</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">created()&#123;<span class="comment">//created函数执行时data已经初始化好了，可以操作了</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  axios.get(<span class="string">'/book'</span>, &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    params: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">      ID: <span class="number">12345</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">response</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">this</span>.book = response.data</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">Vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Vue/" class="article-tag-list-link color4">Vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/12/04/Vue4%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Vue1基础语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/04/Vue1%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">Vue:(一)基础语法</a>
+    </h1>
+  
+
+        
+        <a href="/2018/12/04/Vue1%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2018-12-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一-概况"><a href="#一-概况" class="headerlink" title="一.概况"></a>一.概况</h3><p><strong>1.Vue概况</strong></p>
+<ul>
+<li><strong>Vue本身并不是一个框架</strong></li>
+<li><strong>Vue结合周边生态构成一个灵活的、渐进式框架</strong><ul>
+<li>声明式渲染</li>
+<li>组件系统</li>
+<li>客户端路由</li>
+<li>状态管理</li>
+<li>构建工具</li>
 </ul>
 </li>
-<li>什么时候使用前端路由？<ul>
-<li>在单页面应用，大部分页面结构不变，只改变部分内容的使用</li>
+</ul>
+<p><strong>2.Vue核心思想</strong>：数据驱动、组件化</p>
+<p><strong>3.Vue和React对比</strong></p>
+<ul>
+<li><p><strong>Vue</strong></p>
+<ul>
+<li>模板和渲染函数的弹性选择</li>
+<li>简单的语法及项目构建</li>
+<li>更快的渲染速度和更小的体积</li>
 </ul>
 </li>
-<li>前端路由的优缺点：<ul>
-<li>优点：<ul>
-<li>用户体验好，不用每次都从服务器全部获取，可以快速展现给用户</li>
+<li><p><strong>React</strong></p>
+<ul>
+<li>更适用大型应用和更好的可测试性</li>
+<li>同时适用于Web端和原生App</li>
+<li>更大的生态圈带来的更多支持和工具</li>
 </ul>
 </li>
-<li>缺点：<ul>
-<li>不利于SEO</li>
-<li>使用浏览器的前进/后退键时会重新发送请求，没有合理地利用缓存</li>
-<li>单页面无法记住之前滚动的位置，无法在前进/后退时记住滚动的位置</li>
-</ul>
+<li><p><strong>Vue和React相同点</strong></p>
+<ul>
+<li><p>利用虚拟DOM实现快速渲染</p>
 </li>
-</ul>
+<li><p>轻量级</p>
 </li>
-<li><strong>分类：</strong><ul>
-<li>动态路由匹配</li>
-<li>嵌套路由</li>
-<li>编程式路由</li>
-<li>命名路由和命名视图（很少用）</li>
+<li><p>响应式组件</p>
+</li>
+<li><p>服务器端渲染</p>
+</li>
+<li><p>易于集成路由工具，打包工具以及状态管理工具</p>
+</li>
+<li><p>优秀的支持和社区</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -221,7 +321,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/12/04/Vue2VueRouter/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/12/04/Vue1%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">展开全文 >></a>
         </p>
       
 
@@ -844,137 +944,9 @@
 
 
   
-    <article id="post-正则表达式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="archive-article-date">
-  	<time datetime="2018-09-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一-常用元字符串"><a href="#一-常用元字符串" class="headerlink" title="一.常用元字符串"></a>一.常用元字符串</h3><table>
-<thead>
-<tr>
-<th align="center">元字符</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">\d</td>
-<td align="left">匹配数字</td>
-</tr>
-<tr>
-<td align="center">\D</td>
-<td align="left">匹配任意非数字的字符</td>
-</tr>
-<tr>
-<td align="center">\w</td>
-<td align="left">匹配字母或数字或下划线</td>
-</tr>
-<tr>
-<td align="center">\W</td>
-<td align="left">匹配任意不是字母或数字或下划线</td>
-</tr>
-<tr>
-<td align="center">\s</td>
-<td align="left">匹配任意空白符</td>
-</tr>
-<tr>
-<td align="center">\S</td>
-<td align="left">匹配任意不是空白符的字符</td>
-</tr>
-<tr>
-<td align="center">.</td>
-<td align="left">匹配除换行符以外的任意单个字符</td>
-</tr>
-<tr>
-<td align="center">^</td>
-<td align="left">以什么开始</td>
-</tr>
-<tr>
-<td align="center">$</td>
-<td align="left">以什么结束</td>
-</tr>
-</tbody></table>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">正则</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 
@@ -1061,19 +1033,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Bootstrap</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">JS基础</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Ajax</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1085,7 +1053,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">响应式布局</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Vue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1093,11 +1061,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">正则</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">响应式布局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">正则</a>
               </li>
              
               <li class="article-tag-list-item">
