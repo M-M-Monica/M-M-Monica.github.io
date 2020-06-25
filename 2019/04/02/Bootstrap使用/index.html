@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Bootstrap使用 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一.基础用法 基本样式  排版(标题、页面主体、内联文本元素……) 代码(&amp;lt;code&amp;gt;、&amp;lt;pre&amp;gt;……) 表格(基本、条纹状、带边框、鼠标悬停……) 表单、按钮、图片、辅助类、响应式实用工具……   布局组件  下拉菜单、按钮组、导航元素、导航栏、分页、缩略图、进度条、多媒体对象、列表组……   基本样式和布局组件用法：引入文件 –&amp;gt; 加标签&#x2F;加class">
+  <meta name="description" content="官方文档：https:&#x2F;&#x2F;v3.bootcss.com&#x2F;菜鸟教程：https:&#x2F;&#x2F;www.runoob.com&#x2F;bootstrap&#x2F;bootstrap-tutorial.html 一.基础用法 基本样式  排版(标题、页面主体、内联文本元素……) 代码(&amp;lt;code&amp;gt;、&amp;lt;pre&amp;gt;……) 表格(基本、条纹状、带边框、鼠标悬停……) 表单、按钮、图片、辅助类、响应式实用工具……">
 <meta name="keywords" content="Bootstrap">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Bootstrap使用">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;04&#x2F;02&#x2F;Bootstrap%E4%BD%BF%E7%94%A8&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一.基础用法 基本样式  排版(标题、页面主体、内联文本元素……) 代码(&amp;lt;code&amp;gt;、&amp;lt;pre&amp;gt;……) 表格(基本、条纹状、带边框、鼠标悬停……) 表单、按钮、图片、辅助类、响应式实用工具……   布局组件  下拉菜单、按钮组、导航元素、导航栏、分页、缩略图、进度条、多媒体对象、列表组……   基本样式和布局组件用法：引入文件 –&amp;gt; 加标签&#x2F;加class">
+<meta property="og:description" content="官方文档：https:&#x2F;&#x2F;v3.bootcss.com&#x2F;菜鸟教程：https:&#x2F;&#x2F;www.runoob.com&#x2F;bootstrap&#x2F;bootstrap-tutorial.html 一.基础用法 基本样式  排版(标题、页面主体、内联文本元素……) 代码(&amp;lt;code&amp;gt;、&amp;lt;pre&amp;gt;……) 表格(基本、条纹状、带边框、鼠标悬停……) 表单、按钮、图片、辅助类、响应式实用工具……">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-03-12T07:23:19.968Z">
+<meta property="og:updated_time" content="2020-06-25T04:01:28.172Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -42,7 +42,7 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4f7b92"></div>
+<div class="overlay" style="background: linear-gradient(270deg, #ebe6ed, #4f7b92)"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -87,7 +87,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4f7b92"></div>
+  	<div class="overlay js-overlay" style="background: linear-gradient(270deg, #ebe6ed, #4f7b92)"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -157,7 +157,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一-基础用法"><a href="#一-基础用法" class="headerlink" title="一.基础用法"></a>一.基础用法</h3><ul>
+        <p>官方文档：<a href="https://v3.bootcss.com/" target="_blank" rel="noopener">https://v3.bootcss.com/</a><br>菜鸟教程：<a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html" target="_blank" rel="noopener">https://www.runoob.com/bootstrap/bootstrap-tutorial.html</a></p>
+<h3 id="一-基础用法"><a href="#一-基础用法" class="headerlink" title="一.基础用法"></a>一.基础用法</h3><ul>
 <li><p><strong>基本样式</strong></p>
 <ul>
 <li>排版(标题、页面主体、内联文本元素……)</li>
@@ -182,17 +183,13 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">.container</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  .row</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    .col-<span class="regexp">/.col-sm-/</span>.col-md/.col-lg-<span class="regexp">/.col-xl-</span></span></pre></td></tr></table></figure>
 
-<h3 id="三-插件"><a href="#三-插件" class="headerlink" title="三.插件"></a>三.插件</h3><ul>
+<h3 id="三-JS插件"><a href="#三-JS插件" class="headerlink" title="三.JS插件"></a>三.JS插件</h3><ul>
 <li>插件的作用是实现组件交互。有模态框、下拉菜单、滚动监听、提示工具、弹出框、折叠……</li>
-<li><strong>用法：通过data属性/通过js API</strong></li>
+<li><strong>用法：通过data-*属性/通过js API</strong></li>
 </ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--例：下拉菜单--&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--通过data属性使用--&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"dropdown"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">data-toggle</span>=<span class="string">"dropdown"</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>下拉菜单（Dropdown）触发器<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"dropdown-menu"</span> <span class="attr">role</span>=<span class="string">"menu"</span> <span class="attr">aria-labelledby</span>=<span class="string">"dLabel"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    ...</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr></table></figure>
 
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//通过javascript使用</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$(<span class="string">'.dropdown-toggle'</span>).dropdown()</span></pre></td></tr></table></figure>
-
-
-
-
 
       
 
@@ -325,7 +322,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-基础用法"><span class="toc-number">1.</span> <span class="toc-text">一.基础用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-响应式布局"><span class="toc-number">2.</span> <span class="toc-text">二.响应式布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-插件"><span class="toc-number">3.</span> <span class="toc-text">三.插件</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-基础用法"><span class="toc-number">1.</span> <span class="toc-text">一.基础用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-响应式布局"><span class="toc-number">2.</span> <span class="toc-text">二.响应式布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-JS插件"><span class="toc-number">3.</span> <span class="toc-text">三.JS插件</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -429,11 +426,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Bootstrap</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Ajax</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Ajax</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Bootstrap</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -446,6 +443,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Sass</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -470,10 +471,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">ES6语法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">node</a>
               </li>
             
             <div class="clearfix"></div>
@@ -524,7 +521,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">办法总比困难多</div>
   	  	
     	</section>
     
