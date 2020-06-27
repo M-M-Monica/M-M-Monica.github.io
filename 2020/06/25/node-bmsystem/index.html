@@ -6,16 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>node-bmsystem | Hexo</title>
+  <title>node-bmsystem图书管理系统 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="项目演示">
+  <meta name="description" content="①前：bootstrap + art-template + jquery；后：express + mongoose + mysql  ②步骤：  把mysql&#x2F;mongodb打开 使用mysql则将router.js文件相应注释解开。mysql数据在mysql文件夹下book.sql文件。 使用mongodb则将router.js文件相应注释解开并修改public文件夹下index.html，将">
+<meta name="keywords" content="项目演示">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node-bmsystem">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;06&#x2F;25&#x2F;node-bmsyatem&#x2F;index.html">
+<meta property="og:title" content="node-bmsystem图书管理系统">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;06&#x2F;25&#x2F;node-bmsystem&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="①前：bootstrap + art-template + jquery；后：express + mongoose + mysql  ②步骤：  把mysql&#x2F;mongodb打开 使用mysql则将router.js文件相应注释解开。mysql数据在mysql文件夹下book.sql文件。 使用mongodb则将router.js文件相应注释解开并修改public文件夹下index.html，将">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;image&#x2F;bmsystem.gif">
-<meta property="og:updated_time" content="2020-06-25T13:49:38.618Z">
+<meta property="og:updated_time" content="2020-06-27T08:17:56.334Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;image&#x2F;bmsystem.gif">
   
@@ -137,19 +139,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-node-bmsyatem" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-node-bmsystem" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      node-bmsystem
+      node-bmsystem图书管理系统
     </h1>
   
 
         
-        <a href="/2020/06/25/node-bmsyatem/" class="archive-article-date">
+        <a href="/2020/06/25/node-bmsystem/" class="archive-article-date">
   	<time datetime="2020-06-24T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-25</time>
 </a>
         
@@ -158,6 +160,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/image/bmsystem.gif" alt="bmsystem"></p>
+<p>①前：bootstrap + art-template + jquery；后：express + mongoose + mysql </p>
+<p>②步骤：</p>
+<ul>
+<li>把mysql/mongodb打开<ul>
+<li>使用mysql则将router.js文件相应注释解开。mysql数据在mysql文件夹下book.sql文件。</li>
+<li>使用mongodb则将router.js文件相应注释解开并修改public文件夹下index.html，将$value.id改成$value._id，因为mongodb返回的自增id前面有下划线。mongodb数据在mongodb文件夹下db.js文件里。第一次运行前解开注释，之后运行就把注释注上，避免重复添加数据。</li>
+</ul>
+</li>
+<li>运行node app.js</li>
+</ul>
 
       
 
@@ -238,7 +250,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/25/node-bmsyatem/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/25/node-bmsystem/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -252,9 +264,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/06/25/node-kekedrinks/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          node-kekedrinks渴渴饮料
+        
+      </div>
+    </a>
   
-    <a href="/2020/06/25/react-kekecms/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">react-kekecms</div>
+  
+    <a href="/2020/02/13/Vue%E4%BA%8C%E6%89%8B%E4%B9%A63webpack%E9%85%8D%E7%BD%AE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Vue二手书商城:(三)项目中的webpack配置</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -393,10 +414,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">node</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">JS基础</a>
               </li>
              
@@ -406,6 +423,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">Sass</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -421,7 +442,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">响应式布局</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -429,7 +450,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">响应式布局</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
